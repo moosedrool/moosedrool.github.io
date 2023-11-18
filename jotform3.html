@@ -1473,53 +1473,8 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
             mixpanel.init(MIXPANEL_PROJECT_TOKEN, {debug: true, track_pageview: false, api_host: MIXPANEL_PROXY_DOMAIN});
 
   
-  
-document.addEventListener('DOMContentLoaded', (event) => {  
-    document.querySelectorAll('.contact').forEach(item => {
-      item.addEventListener('click', event => {
-        //console.log("Linked Clicked");
-        const clickedElement = event.target; // This is the element that was clicked
-        // Using closest to ensure we get the <a> tag even if the click was on a descendant
-        const actualLinkElement = clickedElement.closest('a');    
-        	//console.log("actualLinkElement: ", actualLinkElement);
-          if (actualLinkElement) {
-             // Get the href attribute of the closest <a> element
-            const actualHref = actualLinkElement.getAttribute('href');
-            //console.log(actualHref);
-            mixpanel.track("Contact", {
-								"Channel": actualHref,
-								"URL Path": location.pathname
-						});
-            event.stopPropagation()
-          }
-    })
-});
- });  
-  
 </script>	
 <script type="text/javascript">
-document.addEventListener('DOMContentLoaded', (event) => {  
-
-    document.querySelectorAll('.contact').forEach(item => {
-      item.addEventListener('click', event => {
-        console.log("Linked Clicked");
-        const clickedElement = event.target; // This is the element that was clicked
-        // Using closest to ensure we get the <a> tag even if the click was on a descendant
-        const actualLinkElement = clickedElement.closest('a');    
-          if (actualLinkElement) {
-             // Get the href attribute of the closest <a> element
-            const actualHref = actualLinkElement.getAttribute('href');
-            console.log(actualHref);
-            mixpanel.track("Contact", {
-                                "Channel": actualHref,
-                                "URL": location.pathname
-                        });
-
-          }
-    })
-})
-  
-
   document.getElementById('233031288507150').addEventListener('submit', function(event) {
       //event.preventDefault();  // Prevent the default form submission action
 
