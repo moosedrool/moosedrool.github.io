@@ -1470,7 +1470,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
             /**
              * Initialize a Mixpanel instance using your project token and proxy domain
              */
-            mixpanel.init(MIXPANEL_PROJECT_TOKEN, {debug: true, track_pageview: true, api_host: MIXPANEL_PROXY_DOMAIN});
+            mixpanel.init(MIXPANEL_PROJECT_TOKEN, {debug: true, track_pageview: false, api_host: MIXPANEL_PROXY_DOMAIN});
 
   
   
@@ -1545,7 +1545,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       mixpanel.track('Contact', 
                      {"Contact source": "Appointment request",
                       "Service Line": serviceLine, 
-                      "URL": window.location.href});
+                      "URL": "/contact");
 
       mixpanel.track('Sign Up', {
         'Signup Type': 'Appointment request',
