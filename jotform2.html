@@ -35,6 +35,8 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
 <link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3.3.47706" />
 <link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/stylebuilder/donationBox.css?v=3.3.47706">
 <style type="text/css">
+
+#jotform-content-namespace {
     .form-label-left{
         width:400px;
     }
@@ -54,11 +56,15 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
     .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
         color: #282828;
     }
+} /* jotform namespace closer*/
 
 </style>
 
 <style type="text/css" id="form-designer-style">
     /* Injected CSS Code */
+
+#jotform-content-namespace {
+	
 .form-all:after {
   content: "";
   display: table;
@@ -1376,7 +1382,7 @@ li[data-type="control_image"] img {
 
 }
 
-
+} /*closing for namespace nest*/
     /* Injected CSS Code */
 </style>
 
