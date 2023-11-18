@@ -1476,6 +1476,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
   
 </script>	
 <script type="text/javascript">
+
   document.getElementById('233031288507150').addEventListener('submit', function(event) {
       //event.preventDefault();  // Prevent the default form submission action
 
@@ -1501,7 +1502,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
       mixpanel.track('Contact', 
                      {"Contact source": "Appointment request",
                       "Service Line": serviceLine, 
-                      "URL": "/contact"});
+                      "URL": window.location.href});
 
       mixpanel.track('Sign Up', {
         'Signup Type': 'Appointment request',
@@ -1527,8 +1528,6 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
       //return false;  // Prevent the default form submission action, if event.preventDefault() is not sufficient
     });
 });
-
-
 
 
 
