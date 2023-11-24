@@ -1309,6 +1309,14 @@ id_5, input_5_0, label_input_5_0*/
     padding-right : 4% !important;
 }
 
+.form-input {
+    padding : 0 !important;
+}
+
+div#cid_6:before {
+    max-height : 39px;
+}
+
 .form-required {
     display : none;
 }
@@ -1323,6 +1331,12 @@ id_5, input_5_0, label_input_5_0*/
 }
 
 .form-checkbox-item:not(#foo) label:before {
+    background-color : transparent;
+    border : 2px solid #828282;
+    margin-top : 4px;
+}
+
+.form-checkbox-item:not(#foo) label:after {
     background-color : transparent;
     border : 2px solid #828282;
     margin-top : 4px;
@@ -1343,3 +1357,4 @@ id_5, input_5_0, label_input_5_0*/
 
     /* Injected CSS Code */
 </style>
+
