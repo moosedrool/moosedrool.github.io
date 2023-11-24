@@ -1314,7 +1314,7 @@ id_5, input_5_0, label_input_5_0*/
 }
 
 div#cid_6:before {
-    max-height : 39px;
+    max-height : 39px !important;
 }
 
 .form-required {
