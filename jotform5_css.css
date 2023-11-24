@@ -1291,7 +1291,7 @@ id_7, input_7_0, label_input_7_0, #label_input_7_1, cid_7,
 id_5, input_5_0, label_input_5_0
 form-html p
 */
-.form-all, .form-dropdown, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0,  .form-submit-button, .phone-separate  {
+.form-all, .form-dropdown, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0,  .form-submit-button, .phone-separate {
     font-family : kyrial-display-pro, sans-serif !important;
     color : #267A87 !important;
     font-size : 1.125rem !important;
@@ -1335,9 +1335,8 @@ div#cid_6:before {
 
 /*Label 7 urgent checkbox */
 #label_input_5_0 {
-    margin-top : 10px;
+    margin-top : 35px;
 }
-
 
 /* label_input_5_0 placeholder email */
 #label_5 {
@@ -1356,6 +1355,13 @@ div#cid_6:before {
     margin-top : 4px;
 }
 
+/*form-html p (privacy)*/
+.form-html p {
+    font-size : smaller !important;
+    margin-top : -5px;
+    margin-bottom : -5px;
+    display : none;
+}
 
 /* button style */
 .form-all .form-submit-button:hover {
@@ -1367,6 +1373,7 @@ div#cid_6:before {
 .form-input-wide, .form-submit-button {
     color : white !important;
     width : 110%;
+    margin-top : -5px;
 }
 
 .form-html p {
@@ -1379,13 +1386,11 @@ div#cid_6:before {
     display : block;
     text-align : center;
 }
-    
-/*form-html p (privacy)*/
-.form-html p {
-    font-size : smaller !important;
-    margin-top : -5px;
-    margin-bottom : -5px;
-    display : none;
+
+.form-label.form-label-auto {
+    display : inline-block;
+    float : left;
+    text-align : left;
 }
 
 
