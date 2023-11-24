@@ -1293,7 +1293,7 @@ form-html p
 */
 .form-all, .form-dropdown, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0,  .form-submit-button {
     font-family : kyrial-display-pro, sans-serif !important;
-    color : red !important;
+    color : #267A87 !important;
     font-size : 1.125rem !important;
     line-height : 1.5 !important;
     font-weight : normal;
@@ -1322,10 +1322,6 @@ form-html p
 }
 
 div#cid_6:before {
-    max-height : 39px !important;
-}
-
-div#cid_6:after {
     max-height : 39px !important;
 }
 
