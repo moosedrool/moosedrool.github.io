@@ -1305,6 +1305,8 @@ form-html p
     border : none !important;
 }
 
+.phone-separate {display: none;}
+
 .form-error-message {
     padding : 1.25em .5em 1.50em 1.625em !important;
     color : #ffff;
