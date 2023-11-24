@@ -11,7 +11,7 @@
     }
     .form-all{
         width:293px;
-        color:rgb(38, 122, 135) !important;
+        color:#267a87 !important;
         font-family:'Helvetica';
         font-size:14px;
     }
@@ -441,6 +441,9 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
+  background-attachment: fixed;
+  background-size: auto;
+  background-size: cover;
 }
 .supernova {
   background-image: none;
@@ -453,6 +456,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
+  background-size: cover;
 }
 .form-header-group {
   background-repeat: no-repeat;
@@ -511,7 +515,7 @@
   font-size: 1em;
   padding: 9px 15px;
   font-size: 16px;
-  font-weight: bolder;
+  font-weight: normal;
   font-family: inherit;
   border: none;
   border-width: 1px !important;
@@ -1279,11 +1283,15 @@ li[data-type="control_image"] img {
 /* | */
 
 /*__INSPECT_SEPERATOR__*/
-/*Elements: 
+/*
+Elements: 
 id_6, label_6, cid_6, input_6
-id_1, input_1
-id_5, input_5_0, label_input_5_0*/
-.form-all, .form-dropdown, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_input_5_0, .form-submit-button {
+id_1, input_1, 
+id_7, input_7_0, label_input_7_0, #label_input_7_1, cid_7, 
+id_5, input_5_0, label_input_5_0
+form-html p
+*/
+.form-all, .form-dropdown, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0,  .form-submit-button {
     font-family : kyrial-display-pro, sans-serif !important;
     color : #267A87 !important;
     font-size : 1.125rem !important;
@@ -1325,6 +1333,15 @@ div#cid_6:before {
     display : none;
 }
 
+/*Label 7 urgent checkbox */
+#label_input_5_0 {
+    margin-top : 10px;
+}
+
+#label_7 {
+    color : nomral;
+}
+
 /* label_input_5_0 placeholder email */
 #label_5 {
     display : none;
@@ -1342,6 +1359,14 @@ div#cid_6:before {
     margin-top : 4px;
 }
 
+/*form-html p (privacy)*/
+.form-html p {
+    font-size : smaller !important;
+    margin-top : -5px;
+    margin-bottom : -5px;
+    display : none;
+}
+
 /* button style */
 .form-all .form-submit-button:hover {
     color : #ffff !important;
@@ -1354,7 +1379,17 @@ div#cid_6:before {
     width : 110%;
 }
 
+.form-html p {
+    color : #267A87 !important;
+}
+
+/* privacy notice
+.form-html p {
+    color : #267A87 !important;
+    display : block;
+    text-align : center;
+}
+
 
     /* Injected CSS Code */
 </style>
-
