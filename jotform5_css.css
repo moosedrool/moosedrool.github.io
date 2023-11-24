@@ -1285,7 +1285,7 @@ id_1, input_1
 id_5, input_5_0, label_input_5_0*/
 .form-all, .form-dropdown, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_input_5_0, .form-submit-button {
     font-family : kyrial-display-pro, sans-serif !important;
-    color: red !important;
+    color : #267A87 !important;
     font-size : 1.125rem !important;
     line-height : 1.5 !important;
     font-weight : normal;
