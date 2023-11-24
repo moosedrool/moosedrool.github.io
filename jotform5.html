@@ -1,9 +1,9 @@
 <link rel="stylesheet" href="https://use.typekit.net/tvp8kst.css">
 
-<script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.47737" type="text/javascript"></script>
-<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.47737" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/static/prototype.forms.js?3.3.47991" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/static/jotform.forms.js?3.3.47991" type="text/javascript"></script>
 <script defer src="https://cdn03.jotfor.ms//js/punycode-1.4.1.min.js"></script>
-<script src="https://cdn01.jotfor.ms/js/payments/validategateways.js?v=3.3.47737" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/js/payments/validategateways.js?v=3.3.47991" type="text/javascript"></script>
 <script type="text/javascript">	JotForm.newDefaultTheme = false;
 	JotForm.extendsNewTheme = false;
 	JotForm.singleProduct = false;
@@ -22,14 +22,14 @@
    setTimeout(function() {
 JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLabel":"No spam. Your email remains private.","text":"","type":"control_email"},{"name":"submit","qid":"2","text":"SCHEDULE APPOINTMENT","type":"control_button"},null,null,{"description":"","name":"newsletter-from-email-appt","qid":"5","text":"","type":"control_checkbox"},{"description":"","name":"howCan","qid":"6","subLabel":"","text":"How can we help you?","type":"control_dropdown"}]);}, 20); 
 </script>
-<link href="https://cdn01.jotfor.ms/static/formCss.css?3.3.47737" rel="stylesheet" type="text/css" />
-<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/form-common.css?v=944ae2f
+<link href="https://cdn01.jotfor.ms/static/formCss.css?3.3.47991" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/themes/CSS/form-common.css?v=9b5ac39
 "/>
-<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/nova.css?3.3.47737" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/nova.css?3.3.47991" />
 <style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
-<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/54946223700cc43d678b4568.css?v=3.3.47737"/>
-<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3.3.47737" />
-<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/stylebuilder/donationBox.css?v=3.3.47737">
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/54946223700cc43d678b4568.css?v=3.3.47991"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3.3.47991" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/stylebuilder/donationBox.css?v=3.3.47991">
 <style type="text/css">
     .form-label-left{
         width:400px;
@@ -1311,14 +1311,18 @@ li[data-type="control_image"] img {
 /* | */
 
 /*__INSPECT_SEPERATOR__*/
-/* tested and necessary #267A87 */
-.form-all, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_input_5_0, .form-submit-button {
+/*Elements: 
+id_6, label_6, cid_6, input_6
+id_1, input_1
+id_5, input_5_0, label_input_5_0*/
+.form-all, .form-dropdown, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_input_5_0, .form-submit-button {
     font-family : kyrial-display-pro, sans-serif !important;
     color : #267A87 !important;
     font-size : 1.125rem !important;
     line-height : 1.5 !important;
     font-weight : normal;
-    max-width : 100% !important;
+    /*max-width : 100% !important;
+    */;
 }
 
 .form-all {
@@ -1350,6 +1354,12 @@ li[data-type="control_image"] img {
     display : none;
 }
 
+.form-checkbox-item:not(#foo) label:before {
+    background-color : transparent;
+    border : 2px solid #828282;
+    margin-top : 4px;
+}
+
 /* button style */
 .form-all .form-submit-button:hover {
     color : #ffff !important;
@@ -1357,17 +1367,16 @@ li[data-type="control_image"] img {
     border-radius : 10px;
 }
 
-.form-submit-button {
-    font-family : kyrial-display-pro, sans-serif !important;
+.form-input-wide, .form-submit-button {
     color : white !important;
-    width : 350px;
+    width : 110%;
 }
 
 
     /* Injected CSS Code */
 </style>
 
-<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://hipaa-submit.jotform.com/submit/233031288507150" method="post" name="form_233031288507150" id="233031288507150" accept-charset="utf-8" autocomplete="off"><input type="hidden" name="formID" value="233031288507150" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1700419834057" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1700419834057" />
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://hipaa-submit.jotform.com/submit/233031288507150" method="post" name="form_233031288507150" id="233031288507150" accept-charset="utf-8" autocomplete="off"><input type="hidden" name="formID" value="233031288507150" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1700795745336" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1700795745336" />
   <div role="main" class="form-all">
     <ul class="form-section page-section">
       <li class="form-line jf-required" data-type="control_dropdown" id="id_6"><label class="form-label form-label-left form-label-auto" id="label_6" for="input_6" aria-hidden="false"> How can we help you?<span class="form-required">*</span> </label>
