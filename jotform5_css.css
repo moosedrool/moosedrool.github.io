@@ -1344,12 +1344,10 @@ div#cid_6:before {
 
 .form-input-wide, .form-submit-button {
     color : white !important;
-    margin-top : -5px;
+    margin-top : -10px;
 }
 
-.form-html p {
-    color : #267A87 !important;
-}
+
 
 /*form-html p (privacy)*/
 .form-html p {
@@ -1357,16 +1355,11 @@ div#cid_6:before {
     text-align : center;
     margin-top : -15px;
     margin-bottom : -5px;
+    color : red !important;
     display : block;
 }
 
-.form-checkbox-item hoverSticky label {
 
-}
-
-#label_input_7_0 {
-
-}
 
 
     /* Injected CSS Code */
