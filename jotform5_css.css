@@ -1,19 +1,18 @@
-
 <style type="text/css">
 
 
     .form-label-left{
-        width:350px;
+        width:400px;
     }
     .form-line{
         padding-top:10px;
         padding-bottom:10px;
     }
     .form-label-right{
-        width:350px;
+        width:400px;
     }
     .form-all{
-        width:350px;
+        width:400px;
         color:#267a87 !important;
         font-family:'Helvetica';
         font-size:14px;
@@ -1284,7 +1283,7 @@ li[data-type="control_image"] img {
     }
   
     .form-all {
-      max-width: 350px;
+      max-width: 400px;
       width: 100%;
     }
   
@@ -1292,7 +1291,7 @@ li[data-type="control_image"] img {
     .form-label.form-label-right,
     .form-label.form-label-left.form-label-auto,
     .form-label.form-label-right.form-label-auto {
-      width: 350px;
+      width: 400px;
     }
   
     .form-all {
@@ -1479,4 +1478,3 @@ div#cid_6:before {
 
     /* Injected CSS Code */
 </style>
-
