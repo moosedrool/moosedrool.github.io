@@ -1,16 +1,17 @@
+
 <style type="text/css">
     .form-label-left{
-        width:400px;
+        width:350px;
     }
     .form-line{
         padding-top:10px;
         padding-bottom:10px;
     }
     .form-label-right{
-        width:400px;
+        width:350px;
     }
     .form-all{
-        width:293px;
+        width:350px;
         color:#267a87 !important;
         font-family:'Helvetica';
         font-size:14px;
@@ -32,13 +33,13 @@
   font-family: "Helvetica", sans-serif;
 }
 .form-all {
-  width: 293px;
+  width: 350px;
   width: 100%;
-  max-width: 293px;
+  max-width: 350px;
 }
 .form-label-left,
 .form-label-right {
-  width: 400px;
+  width: 350px;
 }
 .form-label {
   white-space: normal;
@@ -48,7 +49,7 @@
   float: left;
   text-align: left;
   word-break: break-word;
-  width: 400px;
+  width: 350px;
 }
 .form-label-left {
   display: inline-block;
@@ -134,7 +135,7 @@
 }
 /* | */
 /* | */
-@media screen and (min-width: 480px) and (max-width: 292px) {
+@media screen and (min-width: 480px) and (max-width: 349px) {
   .jotform-form .form-all {
     width: 100%;
   }
@@ -148,7 +149,7 @@
 }
 /* | */
 /* | */
-@media screen and (max-width: 292px) {
+@media screen and (max-width: 349px) {
   .jotform-form .form-all {
     width: 100%;
   }
@@ -732,28 +733,6 @@ h2 ~ .form-subHeader {
   width: 100%;
   margin: 0;
 }
-.form-line,
-.form-input,
-.form-input-wide,
-.form-dropdown,
-.form-sub-label-container,
-.form-address-table,
-.form-matrix-table {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: none;
-}
-.form-textbox,
-.form-textarea,
-.form-radio-item,
-.form-checkbox-item,
-.form-captcha input,
-.form-spinner input,
-.form-error-message {
-  width: 100%;
-  max-width: none;
-  box-sizing: border-box;
-}
 .form-captcha input,
 .form-spinner input,
 .form-error-message {
@@ -1291,7 +1270,7 @@ id_7, input_7_0, label_input_7_0, #label_input_7_1, cid_7,
 id_5, input_5_0, label_input_5_0
 form-html p
 */
-.form-all, .form-dropdown, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0,  .form-submit-button, .phone-separate {
+.form-all, .form-dropdown, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0, #cid_8, #input_8_full, .form-submit-button {
     font-family : kyrial-display-pro, sans-serif !important;
     color : #267A87 !important;
     font-size : 1.125rem !important;
@@ -1304,8 +1283,6 @@ form-html p
 .form-all {
     border : none !important;
 }
-
-.phone-separate {display: none;}
 
 .form-error-message {
     padding : 1.25em .5em 1.50em 1.625em !important;
@@ -1327,16 +1304,12 @@ div#cid_6:before {
     max-height : 39px !important;
 }
 
-.form-required {
-    display : none;
-}
-
-.form-label:after {
-    display : none;
+.form-required, .form-label:after {
+    display : none !important;
 }
 
 /*Label 7 urgent checkbox */
-#label_input_5_0 {
+#label_7 {
     margin-top : 35px;
 }
 
@@ -1357,16 +1330,13 @@ div#cid_6:before {
     margin-top : 4px;
 }
 
-/*form-html p (privacy)*/
-.form-html p {
-    font-size : smaller !important;
-    margin-top : -5px;
-    margin-bottom : -5px;
-    display : none;
+/* newsletter margin */
+#label_input_5_0 {
+    margin-top : 35px;
 }
 
 /* button style */
-.form-all .form-submit-button:hover {
+.form-submit-button:hover {
     color : #ffff !important;
     background : #00a69c !important;
     border-radius : 10px;
@@ -1374,7 +1344,6 @@ div#cid_6:before {
 
 .form-input-wide, .form-submit-button {
     color : white !important;
-    width : 110%;
     margin-top : -5px;
 }
 
@@ -1382,19 +1351,16 @@ div#cid_6:before {
     color : #267A87 !important;
 }
 
-/* privacy notice
+/*form-html p (privacy)*/
 .form-html p {
-    color : #267A87 !important;
-    display : block;
+    font-size : smaller !important;
     text-align : center;
-}
-
-.form-label.form-label-auto {
-    display : inline-block;
-    float : left;
-    text-align : left;
+    margin-top : -15px;
+    margin-bottom : -5px;
+    display : block;
 }
 
 
     /* Injected CSS Code */
 </style>
+
