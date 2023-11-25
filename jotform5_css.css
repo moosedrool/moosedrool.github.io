@@ -1,6 +1,4 @@
 <style type="text/css">
-
-
     .form-label-left{
         width:400px;
     }
@@ -34,9 +32,9 @@
   font-family: "Helvetica", sans-serif;
 }
 .form-all {
-  width: 350px;
+  width: 400px;
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
 }
 .form-label-left,
 .form-label-right {
@@ -136,7 +134,7 @@
 }
 /* | */
 /* | */
-@media screen and (min-width: 480px) and (max-width: 349px) {
+@media screen and (min-width: 480px) and (max-width: 399px) {
   .jotform-form .form-all {
     width: 100%;
   }
@@ -150,7 +148,7 @@
 }
 /* | */
 /* | */
-@media screen and (max-width: 349px) {
+@media screen and (max-width: 399px) {
   .jotform-form .form-all {
     width: 100%;
   }
@@ -215,12 +213,12 @@
 [data-type="control_radio"] .form-input-wide,
 [data-type="control_checkbox"] .form-input-wide {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
 }
 .form-radio-item,
 .form-checkbox-item {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   box-sizing: border-box;
 }
 .form-textbox.form-radio-other-input,
@@ -513,7 +511,7 @@
 .form-submit-reset,
 .form-submit-print {
   height: 55px;
-  width: 350px;
+  width: 400px;
   font-size: 1em;
   padding: 9px 15px;
   font-size: 16px;
@@ -775,7 +773,7 @@ h2 ~ .form-subHeader {
 .form-textbox,
 .form-textarea {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   box-sizing: border-box;
 }
 [data-type="control_textbox"] .form-input,
@@ -797,7 +795,7 @@ h2 ~ .form-subHeader {
 [data-type="control_passwordbox"] .form-input-wide,
 [data-type="control_autocomp"] .form-input-wide {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
 }
 [data-type="control_fullname"] .form-sub-label-container {
   box-sizing: border-box;
@@ -840,11 +838,11 @@ h2 ~ .form-subHeader {
 }
 .form-matrix-table {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
 }
 .form-address-table {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
 }
 .form-address-table td .form-dropdown {
   width: 100%;
@@ -879,11 +877,11 @@ h2 ~ .form-subHeader {
 [data-type="control_birthdate"] .form-input-wide,
 [data-type="control_time"] .form-input-wide {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
 }
 [data-type="control_dropdown"] .form-dropdown {
   width: 100% !important;
-  max-width: 350px;
+  max-width: 400px;
 }
 [data-type="control_birthdate"] .form-sub-label-container {
   width: 22%;
@@ -1262,108 +1260,7 @@ li[data-type="control_image"] img {
 }
 /* | */
 
-/*PREFERENCES STYLE*/
-    .form-all {
-      font-family: Helvetica, sans-serif;
-    }
-  
-    .form-label.form-label-auto {
-      
-    display: inline-block;
-    float: left;
-    text-align: left;
-  
-    }
-  
-    .form-line {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-  
-    .form-all {
-      max-width: 400px;
-      width: 100%;
-    }
-  
-    .form-label.form-label-left,
-    .form-label.form-label-right,
-    .form-label.form-label-left.form-label-auto,
-    .form-label.form-label-right.form-label-auto {
-      width: 400px;
-    }
-  
-    .form-all {
-      font-size: 14px
-    }
-  
-    .supernova .form-all, .form-all {
-      background-color: rgba(255, 255, 255, 0);
-    }
-  
-    .form-all {
-      color: #267a87;
-    }
-    .form-header-group .form-header {
-      color: #267a87;
-    }
-    .form-header-group .form-subHeader {
-      color: #267a87;
-    }
-    .form-label-top,
-    .form-label-left,
-    .form-label-right,
-    .form-html,
-    .form-checkbox-item label,
-    .form-radio-item label,
-    span.FITB .qb-checkbox-label,
-    span.FITB .qb-radiobox-label,
-    span.FITB .form-radio label,
-    span.FITB .form-checkbox label,
-    [data-blotid][data-type=checkbox] [data-labelid],
-    [data-blotid][data-type=radiobox] [data-labelid],
-    span.FITB-inptCont[data-type=checkbox] label,
-    span.FITB-inptCont[data-type=radiobox] label {
-      color: #267a87;
-    }
-    .form-sub-label {
-      color: #4094a1;
-    }
-  
-  .supernova {
-    background-color: #ffffff;
-  }
-  .supernova body {
-    background: transparent;
-  }
-  
-    .form-textbox,
-    .form-textarea,
-    .form-dropdown,
-    .form-radio-other-input,
-    .form-checkbox-other-input,
-    .form-captcha input,
-    .form-spinner input {
-      background-color: #fff;
-    }
-  
-      
-    .supernova {
-      background-repeat: no-repeat;
-      background-size:cover;
-      background-attachment: fixed;
-      background-position: center top;
-    }
-
-      .supernova, #stage {
-        background-image: none;
-      }
-    
-      .form-all {
-        background-image: none;
-      }
-    /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+/*__INSPECT_SEPERATOR__*/
 /*
 Elements: 
 id_6, label_6, cid_6, input_6
@@ -1379,6 +1276,7 @@ form-html p
     line-height : 1.5 !important;
     font-weight : normal;
     /*max-width : 100% !important;
+    color: red !important;
     */;
 }
 
