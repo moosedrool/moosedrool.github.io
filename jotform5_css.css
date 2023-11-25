@@ -593,24 +593,24 @@ h2 ~ .form-subHeader {
 }
 .form-captcha input,
 .form-spinner input {
-  width: 350px;
+  width: 400px;
 }
 .form-textbox,
 .form-textarea {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   box-sizing: border-box;
 }
 .form-input,
 .form-address-table,
 .form-matrix-table {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
 }
 .form-radio-item,
 .form-checkbox-item {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   box-sizing: border-box;
 }
 .form-textbox.form-radio-other-input,
@@ -664,7 +664,7 @@ h2 ~ .form-subHeader {
 }
 [data-type="control_dropdown"] .form-dropdown {
   width: 100% !important;
-  max-width: 350px;
+  max-width: 400px;
 }
 [data-type="control_fullname"] .form-sub-label-container {
   box-sizing: border-box;
@@ -1275,7 +1275,6 @@ form-html p
     font-size : 1.125rem !important;
     line-height : 1.5 !important;
     font-weight : normal;
-    color: red !important;
     /*max-width : 100% !important;
     */;
 }
@@ -1322,9 +1321,6 @@ div#cid_6:before {
 }
 
 /* label_input_5_0 placeholder email */
-
-
-
 #label_5 {
     display : none;
 }
