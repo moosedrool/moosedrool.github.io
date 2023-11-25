@@ -1,5 +1,7 @@
 
 <style type="text/css">
+
+
     .form-label-left{
         width:350px;
     }
@@ -39,7 +41,7 @@
 }
 .form-label-left,
 .form-label-right {
-  width: 350px;
+  width: 400px;
 }
 .form-label {
   white-space: normal;
@@ -49,7 +51,7 @@
   float: left;
   text-align: left;
   word-break: break-word;
-  width: 350px;
+  width: 400px;
 }
 .form-label-left {
   display: inline-block;
@@ -1261,7 +1263,108 @@ li[data-type="control_image"] img {
 }
 /* | */
 
-/*__INSPECT_SEPERATOR__*/
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Helvetica, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: inline-block;
+    float: left;
+    text-align: left;
+  
+    }
+  
+    .form-line {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  
+    .form-all {
+      max-width: 350px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 350px;
+    }
+  
+    .form-all {
+      font-size: 14px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: rgba(255, 255, 255, 0);
+    }
+  
+    .form-all {
+      color: #267a87;
+    }
+    .form-header-group .form-header {
+      color: #267a87;
+    }
+    .form-header-group .form-subHeader {
+      color: #267a87;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label,
+    span.FITB .qb-checkbox-label,
+    span.FITB .qb-radiobox-label,
+    span.FITB .form-radio label,
+    span.FITB .form-checkbox label,
+    [data-blotid][data-type=checkbox] [data-labelid],
+    [data-blotid][data-type=radiobox] [data-labelid],
+    span.FITB-inptCont[data-type=checkbox] label,
+    span.FITB-inptCont[data-type=radiobox] label {
+      color: #267a87;
+    }
+    .form-sub-label {
+      color: #4094a1;
+    }
+  
+  .supernova {
+    background-color: #ffffff;
+  }
+  .supernova body {
+    background: transparent;
+  }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+      
+    .supernova {
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-attachment: fixed;
+      background-position: center top;
+    }
+
+      .supernova, #stage {
+        background-image: none;
+      }
+    
+      .form-all {
+        background-image: none;
+      }
+    /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
 /*
 Elements: 
 id_6, label_6, cid_6, input_6
@@ -1270,7 +1373,7 @@ id_7, input_7_0, label_input_7_0, #label_input_7_1, cid_7,
 id_5, input_5_0, label_input_5_0
 form-html p
 */
-.form-all, .form-dropdown, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0, #cid_8, #input_8_full, .form-submit-button {
+.form-all, .form-dropdown, #label_6, #input_6, ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0,  .form-submit-button {
     font-family : kyrial-display-pro, sans-serif !important;
     color : #267A87 !important;
     font-size : 1.125rem !important;
@@ -1290,6 +1393,10 @@ form-html p
     font-weight : bold;
 }
 
+.phone-separate {
+    display : none;
+}
+
 /*input_6–dropdown*/
 #label_6, #input_6 {
     width : 100% !important;
@@ -1304,12 +1411,23 @@ div#cid_6:before {
     max-height : 39px !important;
 }
 
-.form-required, .form-label:after {
-    display : none !important;
+.form-required {
+    display : none;
 }
 
+.form-label:after {
+    display : none;
+}
+
+/*Label 7 urgent checkbox 
+#label_input_5_0 {
+    margin-top : 35px;
+}
 
 /* label_input_5_0 placeholder email */
+*/
+
+
 #label_5 {
     display : none;
 }
@@ -1326,11 +1444,8 @@ div#cid_6:before {
     margin-top : 4px;
 }
 
-/* newsletter margin */
-
-
 /* button style */
-.form-submit-button:hover {
+.form-all .form-submit-button:hover {
     color : #ffff !important;
     background : #00a69c !important;
     border-radius : 10px;
@@ -1341,16 +1456,24 @@ div#cid_6:before {
     margin-top : -10px;
 }
 
-
-
-/*form-html p (privacy)*/
+/* privacy notice*/
 .form-html p {
-    font-size : smaller !important;
-    text-align : center;
-    margin-top : -15px;
-    margin-bottom : -5px;
     color : #267A87 !important;
     display : block;
+    text-align : center;
+    font-size : smaller !important;
+    margin-top : -5px;
+    margin-bottom : -5px;
+}
+
+.form-label.form-label-auto {
+    display : inline-block;
+    float : left;
+    text-align : left;
+}
+
+#label_7 {
+
 }
 
 
