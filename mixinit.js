@@ -2,7 +2,7 @@
             /**
              * Configuration Variables - CHANGE THESE!
              */
-            const MIXPANEL_PROJECT_TOKEN = "b03dbbad64dd3e78d1499439e3d76112"; // e.g. "67e8bfdec29d84ab2d36ae18c57b8535"
+            const MIXPANEL_PROJECT_TOKEN = "aed2ccf5ed48e437de5177992acee3ef"; // e.g. "67e8bfdec29d84ab2d36ae18c57b8535"
             const MIXPANEL_PROXY_DOMAIN = "https://mixpanel-tracking-proxy-755brc6fta-uw.a.run.app"; // e.g. "https://proxy-eoca2pin3q-uc.a.run.app"
             
             /**
