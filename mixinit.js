@@ -1,4 +1,18 @@
 <script type="text/javascript">
+  
+  
+  function qsToObj(queryString) {
+    try {
+        // eslint-disable-next-line compat/compat
+        const parsedQs = new URLSearchParams(queryString);
+        const params = Object.fromEntries(parsedQs);
+        console.log("Params: ",params);
+        return params;
+    } 
+    catch (e) {
+    return {};
+    }
+  }
             /**
              * Configuration Variables - CHANGE THESE!
              */
@@ -20,26 +34,61 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
             /**
              * Initialize a Mixpanel instance using your project token and proxy domain
              */
-            mixpanel.init(MIXPANEL_PROJECT_TOKEN, {debug: true, track_pageview: true, api_host: MIXPANEL_PROXY_DOMAIN});
+mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
+    debug: true,
+    track_pageview: false,    //you may wish to turn this off so you don't duplicate page view events...
+    api_host: MIXPANEL_PROXY_DOMAIN,
+    loaded: function(mixpanel) {
+        const urlParams = qsToObj(window.location.search);
+        mixpanel.register(urlParams, {
+            persistent: false
+        });
 
+      
+        var pageTitle = document.title;
+		console.log("The title of the page is: " + pageTitle);
+      	var currentDomain = window.location.hostname;
+		console.log("Current domain: " + currentDomain);
+      	var currentPath = window.location.pathname;
+		console.log("Current path: " + currentPath);
+      	var currentProtocol = window.location.protocol;
+		console.log("Current protocol: " + currentProtocol);
+		var queryString = window.location.search;
+		console.log("Query string: " + queryString);
+
+
+      
+        mixpanel.track('$mp_web_page_view', {
+          	"event":				"$mp_web_page_view",
+        	"current_page_title": 	pageTitle,
+      		"current_domain":		currentDomain,
+          	"current_url_path":		currentPath,
+          	"current_url_protocol":	currentProtocol,
+          	"current_url_search":	queryString              
+        }) //should have all your URL params on there 
+
+    }
+})
   
   
-document.addEventListener('DOMContentLoaded', (event) => {  
-    document.querySelectorAll('.contact').forEach(item => {
+  
+  
+  document.addEventListener('DOMContentLoaded', (event) => {  
+    document.querySelectorAll('.contact:not(div)').forEach(item => {
       item.addEventListener('click', event => {
         //console.log("Linked Clicked");
         const clickedElement = event.target; // This is the element that was clicked
         // Using closest to ensure we get the <a> tag even if the click was on a descendant
         const actualLinkElement = clickedElement.closest('a');    
-        	//console.log("actualLinkElement: ", actualLinkElement);
+                //console.log("actualLinkElement: ", actualLinkElement);
           if (actualLinkElement) {
              // Get the href attribute of the closest <a> element
             const actualHref = actualLinkElement.getAttribute('href');
             //console.log(actualHref);
             mixpanel.track("Contact", {
-								"Channel": actualHref,
-								"URL Path": location.pathname
-						});
+                                                                "Channel": actualHref,
+                                                                "URL Path": location.pathname
+                                                });
             event.stopPropagation()
           }
     })
