@@ -36,13 +36,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
                       "Urgent": urgent,
                       "Phone Number": phone_number,
                       "$email" : emailValue});
+                      
+    if (newsletterSubscription) {
+    console.log("Checkbox is checked. Doing some stuff...");
+         mixpanel.track('Newsletter Sign Up', {
+        		'Service Line': serviceLine, 
+		        'newsletter': newsletterSubscription,
+    		    'Phone Number': phone_number,
+        		'$email' : emailValue});
+		}
 
-      mixpanel.track('Sign Up', {
-        'Signup Type': 'Appointment request',
-        'Service Line': serviceLine, 
-        'newsletter': newsletterSubscription,
-        'Phone Number': phone_number,
-        '$email' : emailValue});
+
       //})
 
 
