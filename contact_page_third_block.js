@@ -19,6 +19,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
       newsletter: newsletterSubscription,  // Add newsletter subscription status to JSON object
       serviceLine: serviceLine
     };
+    
+    
+    var pageTitle = document.title;
+		console.log("The title of the page is: " + pageTitle);
+    var currentDomain = window.location.hostname;
+		console.log("Current domain: " + currentDomain);
+    var currentPath = window.location.pathname;
+		console.log("Current path: " + currentPath);
+    var currentProtocol = window.location.protocol;
+		console.log("Current protocol: " + currentProtocol);
+		var queryString = window.location.search;
+		console.log("Query string: " + queryString);
 
       //window.addEventListener('mpEZTrackLoaded', ()=>{
       // mixpanel.ez is always available in this scope
@@ -32,18 +44,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
       mixpanel.track('Contact', 
                      {"Channel": "Appointment request",
                       "Service Line": serviceLine, 
-                      "URL": window.location.href, 
                       "Urgent": urgent,
                       "Phone Number": phone_number,
-                      "$email" : emailValue});
+                      "$email" : emailValue,
+                      "current_page_title": 	pageTitle,
+      								"current_domain":		currentDomain,
+          						"current_url_path":		currentPath,
+          						"current_url_protocol":	currentProtocol,
+          						"current_url_search":	queryString       
+                      });
                       
     if (newsletterSubscription) {
     console.log("Checkbox is checked. Doing some stuff...");
+    
          mixpanel.track('Newsletter Sign Up', {
         		'Service Line': serviceLine, 
 		        'newsletter': newsletterSubscription,
     		    'Phone Number': phone_number,
-        		'$email' : emailValue});
+        		'$email' : emailValue,
+           "current_page_title": 	pageTitle,
+           "current_domain":		currentDomain,
+           "current_url_path":		currentPath,
+           "current_url_protocol":	currentProtocol,
+           "current_url_search":	queryString  });
 		}
 
 
