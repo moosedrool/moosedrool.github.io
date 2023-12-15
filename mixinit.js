@@ -70,7 +70,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
     }
 });
 
-console.log("Done with init");
+console.log("Done with init semicolon added");
   
   
   
