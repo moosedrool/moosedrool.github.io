@@ -46,7 +46,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
       
         var pageTitle = document.title;
-		console.log("The title of the page is: " + pageTitle);
+		console.log("The TITLE of the page is: " + pageTitle);
       	var currentDomain = window.location.hostname;
 		console.log("Current domain: " + currentDomain);
       	var currentPath = window.location.pathname;
@@ -79,6 +79,7 @@ console.log("Done with init semicolon added");
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', (event) => {  
+	  console.log("Listener loaded");
     document.querySelectorAll('.contact').forEach(item => {
       item.addEventListener('click', event => {
         console.log("Linked Clicked");
@@ -94,7 +95,7 @@ console.log("Done with init semicolon added");
                                                                 "Channel": actualHref,
                                                                 "URL Path": location.pathname
                                                 });
-            //event.stopPropagation();
+            event.stopPropagation();
           }
     });
 });
