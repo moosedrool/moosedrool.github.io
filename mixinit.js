@@ -65,7 +65,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
           	"current_url_path":		currentPath,
           	"current_url_protocol":	currentProtocol,
           	"current_url_search":	queryString              
-        }); //should have all your URL params on there 
+        }) //should have all your URL params on there 
 
     }
 });
@@ -88,7 +88,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
                 "Channel": actualHref,
         	"URL Path": location.pathname
             });
-            event.stopPropagation();
+            event.stopPropagation()
           }
     }); //this one
 });
