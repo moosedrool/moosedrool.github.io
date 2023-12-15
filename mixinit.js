@@ -79,7 +79,7 @@ console.log("Done with init semicolon added");
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', (event) => {  
-    document.querySelectorAll('.contact').forEach(item => {
+    document.querySelectorAll('.contact:not(div)').forEach(item => {
       item.addEventListener('click', event => {
         console.log("Linked Clicked");
         const clickedElement = event.target; // This is the element that was clicked
@@ -94,7 +94,7 @@ console.log("Done with init semicolon added");
                                                                 "Channel": actualHref,
                                                                 "URL Path": location.pathname
                                                 });
-            event.stopPropagation();
+            //event.stopPropagation();
           }
     });
 });
