@@ -91,7 +91,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
             });
             event.stopPropagation()
           }
-    })
+    }); //this one
 });
  });  
   
