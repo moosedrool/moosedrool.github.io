@@ -1,6 +1,6 @@
 <script type="text/javascript">
 console.log("Second javascript here");
-  document.addEventListener('DOMContentLoaded', (event) => {  
+  document.addEventListener('DOMContentLoaded', () => {  
 	  console.log("Listener loaded");
     document.querySelectorAll('.contact').forEach(item => {
       item.addEventListener('click', event => {
