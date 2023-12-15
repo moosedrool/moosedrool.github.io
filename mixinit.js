@@ -46,7 +46,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
       
         var pageTitle = document.title;
-		console.log("The TiTlE of the page is: " + pageTitle);
+		console.log("The title of the page is: " + pageTitle);
       	var currentDomain = window.location.hostname;
 		console.log("Current domain: " + currentDomain);
       	var currentPath = window.location.pathname;
