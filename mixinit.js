@@ -92,7 +92,7 @@ console.log("Done with init");
                                                 });
             event.stopPropagation();
           }
-    })
+    });
 });
  });  
   
