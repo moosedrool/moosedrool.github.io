@@ -79,7 +79,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
         const clickedElement = event.target; // This is the element that was clicked
         // Using closest to ensure we get the <a> tag even if the click was on a descendant
         const actualLinkElement = clickedElement.closest('a');    
-                console.log("actualLinkElement: ", actualLinkElement);
+                //console.log("actualLinkElement: ", actualLinkElement);
           if (actualLinkElement) {
              // Get the href attribute of the closest <a> element
             const actualHref = actualLinkElement.getAttribute('href');
