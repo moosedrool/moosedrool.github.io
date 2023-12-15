@@ -46,7 +46,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
       
         var pageTitle = document.title;
-		console.log("The TITLE of the page is: " + pageTitle);
+		console.log("The title of the page is: " + pageTitle);
       	var currentDomain = window.location.hostname;
 		console.log("Current domain: " + currentDomain);
       	var currentPath = window.location.pathname;
@@ -78,6 +78,7 @@ console.log("Done with init semicolon added");
 
 
 <script type="text/javascript">
+console.log("Second javascript here");
   document.addEventListener('DOMContentLoaded', (event) => {  
 	  console.log("Listener loaded");
     document.querySelectorAll('.contact').forEach(item => {
