@@ -35,7 +35,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
              * Initialize a Mixpanel instance using your project token and proxy domain
              */
 mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
-    debug: false,
+    debug: true,
     track_pageview: false,    //you may wish to turn this off so you don't duplicate page view events...
     api_host: MIXPANEL_PROXY_DOMAIN,
     loaded: function(mixpanel) {
