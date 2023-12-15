@@ -73,7 +73,11 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 console.log("Done with init semicolon added");
   
   
-  
+</script>
+
+
+
+<script type="text/javascript">
   document.addEventListener('DOMContentLoaded', (event) => {  
     document.querySelectorAll('.contact').forEach(item => {
       item.addEventListener('click', event => {
@@ -95,5 +99,4 @@ console.log("Done with init semicolon added");
     });
 });
  });  
-  
 </script>
