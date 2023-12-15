@@ -35,7 +35,7 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
              * Initialize a Mixpanel instance using your project token and proxy domain
              */
 mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
-    debug: true,
+    debug: false,
     track_pageview: false,    //you may wish to turn this off so you don't duplicate page view events...
     api_host: MIXPANEL_PROXY_DOMAIN,
     loaded: function(mixpanel) {
@@ -68,14 +68,15 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
         }) //should have all your URL params on there 
 
     }
-});
+})
   
-  console.log("Done with init");
+  
+  
   
   document.addEventListener('DOMContentLoaded', (event) => {  
     document.querySelectorAll('.contact:not(div)').forEach(item => {
       item.addEventListener('click', event => {
-        console.log("Linked Clicked");
+        //console.log("Linked Clicked");
         const clickedElement = event.target; // This is the element that was clicked
         // Using closest to ensure we get the <a> tag even if the click was on a descendant
         const actualLinkElement = clickedElement.closest('a');    
@@ -83,14 +84,14 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
           if (actualLinkElement) {
              // Get the href attribute of the closest <a> element
             const actualHref = actualLinkElement.getAttribute('href');
-            console.log("Actual Href:", actualHref);
+            //console.log(actualHref);
             mixpanel.track("Contact", {
-                "Channel": actualHref,
-        	"URL Path": location.pathname
-            });
+                                                                "Channel": actualHref,
+                                                                "URL Path": location.pathname
+                                                });
             event.stopPropagation()
           }
-    }); //this one
+    })
 });
  });  
   
