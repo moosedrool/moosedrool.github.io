@@ -46,7 +46,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
       
         var pageTitle = document.title;
-		console.log("The TiTlE of the page is: " + pageTitle);
+		console.log("The title of the page is: " + pageTitle);
       	var currentDomain = window.location.hostname;
 		console.log("Current domain: " + currentDomain);
       	var currentPath = window.location.pathname;
@@ -70,13 +70,12 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
     }
 });
   
-  
-  
+  console.log("Done with init");
   
   document.addEventListener('DOMContentLoaded', (event) => {  
     document.querySelectorAll('.contact:not(div)').forEach(item => {
       item.addEventListener('click', event => {
-        //console.log("Linked Clicked");
+        console.log("Linked Clicked");
         const clickedElement = event.target; // This is the element that was clicked
         // Using closest to ensure we get the <a> tag even if the click was on a descendant
         const actualLinkElement = clickedElement.closest('a');    
