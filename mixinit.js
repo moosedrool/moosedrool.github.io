@@ -68,7 +68,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
         }) //should have all your URL params on there 
 
     }
-})
+});
   
   
   
