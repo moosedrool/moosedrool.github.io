@@ -79,7 +79,7 @@ console.log("Done with init semicolon added");
 
 <script type="text/javascript">
   document.addEventListener('DOMContentLoaded', (event) => {  
-    document.querySelectorAll('.contact:not(div)').forEach(item => {
+    document.querySelectorAll('.contact').forEach(item => {
       item.addEventListener('click', event => {
         console.log("Linked Clicked");
         const clickedElement = event.target; // This is the element that was clicked
