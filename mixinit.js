@@ -84,11 +84,11 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
           if (actualLinkElement) {
              // Get the href attribute of the closest <a> element
             const actualHref = actualLinkElement.getAttribute('href');
-            //console.log(actualHref);
+            console.log(actualHref);
             mixpanel.track("Contact", {
-                                                                "Channel": actualHref,
-                                                                "URL Path": location.pathname
-                                                });
+                "Channel": actualHref,
+        	"URL Path": location.pathname
+            });
             event.stopPropagation()
           }
     })
