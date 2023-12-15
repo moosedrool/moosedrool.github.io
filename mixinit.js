@@ -57,9 +57,9 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 		console.log("Query string: " + queryString);
 
 
-        console.log("Posting Page View");
+      
         mixpanel.track('$mp_web_page_view', {
-          	"event": "$mp_web_page_view",
+          	"event":				"$mp_web_page_view",
         	"current_page_title": 	pageTitle,
       		"current_domain":		currentDomain,
           	"current_url_path":		currentPath,
