@@ -68,11 +68,13 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
         }); //should have all your URL params on there 
 
     }
-})
+});
+
+</script>
   
   
   
-  
+<script type="text/javascript">  
   document.addEventListener('DOMContentLoaded', (event) => {  
     document.querySelectorAll('.contact:not(div)').forEach(item => {
       item.addEventListener('click', event => {
