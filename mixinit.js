@@ -46,7 +46,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
       
         var pageTitle = document.title;
-		console.log("The TITLE of the page is: " + pageTitle);
+		console.log("The TiTlE of the page is: " + pageTitle);
       	var currentDomain = window.location.hostname;
 		console.log("Current domain: " + currentDomain);
       	var currentPath = window.location.pathname;
@@ -65,7 +65,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
           	"current_url_path":		currentPath,
           	"current_url_protocol":	currentProtocol,
           	"current_url_search":	queryString              
-        }) //should have all your URL params on there 
+        }); //should have all your URL params on there 
 
     }
 })
@@ -86,12 +86,12 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
             const actualHref = actualLinkElement.getAttribute('href');
             //console.log(actualHref);
             mixpanel.track("Contact", {
-                                                                "Channel": actualHref,
-                                                                "URL Path": location.pathname
+                  "Channel": actualHref,
+                  "URL Path": location.pathname
                                                 });
             event.stopPropagation()
-          }
-    })
+          };
+    });
 });
  });  
   
