@@ -75,4 +75,17 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 <script type="text/javascript">  
 	console.log(".Contact Script starting");
 
+
+
+  document.addEventListener('DOMContentLoaded', (event) => {  
+	  console.log("DOMContent Loaded");
+    document.querySelectorAll('.contact:not(div)').forEach(item => {
+	  console.log("querySelectorAll");
+      item.addEventListener('click', event => {
+        console.log("Linked Clicked");
+
+    });
+});
+ });  
+  
 </script>
