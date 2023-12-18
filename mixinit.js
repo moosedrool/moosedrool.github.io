@@ -59,20 +59,18 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
       
         mixpanel.track('$mp_web_page_view', {
-          	"event":				"$mp_web_page_view",
+          	"event":		"$mp_web_page_view",
         	"current_page_title": 	pageTitle,
-      		"current_domain":		currentDomain,
-          	"current_url_path":		currentPath,
+      		"current_domain":	currentDomain,
+          	"current_url_path":	currentPath,
           	"current_url_protocol":	currentProtocol,
           	"current_url_search":	queryString              
         }); //should have all your URL params on there 
-
     }
 });
 
 </script>
-  
-  
+
   
 <script type="text/javascript">  
   document.addEventListener('DOMContentLoaded', (event) => {  
@@ -90,8 +88,8 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
             mixpanel.track("Contact", {
                   "Channel": actualHref,
                   "URL Path": location.pathname
-                                                });
-            event.stopPropagation()
+            });
+            event.stopPropagation();
           };
     });
 });
