@@ -46,7 +46,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
       
         var pageTitle = document.title;
-		console.log("The title of the page is: " + pageTitle);
+		console.log("The TITLE of the page is: " + pageTitle);
       	var currentDomain = window.location.hostname;
 		console.log("Current domain: " + currentDomain);
       	var currentPath = window.location.pathname;
@@ -79,7 +79,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
   document.addEventListener('DOMContentLoaded', (event) => {  
 	  console.log("DOMContent Loaded");
-    document.querySelectorAll('.contact:not(div)').forEach(item => {
+    document.querySelectorAll('.contact').forEach(item => {
 	  console.log("querySelectorAll");
       item.addEventListener('click', event => {
         console.log("Linked Clicked");
