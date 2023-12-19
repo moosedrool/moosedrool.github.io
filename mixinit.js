@@ -46,7 +46,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
       
         var pageTitle = document.title;
-		console.log("The TITLE of the page is: " + pageTitle);
+		console.log("The title of the page is: " + pageTitle);
       	var currentDomain = window.location.hostname;
 		console.log("Current domain: " + currentDomain);
       	var currentPath = window.location.pathname;
@@ -73,19 +73,25 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
   
 <script type="text/javascript">  
-	console.log(".Contact Script starting");
 
-
-
-  document.addEventListener('DOMContentLoaded', (event) => {  
-	  console.log("DOMContent Loaded");
-    document.querySelectorAll('.contact').forEach(item => {
-	  console.log("querySelectorAll");
-      item.addEventListener('click', event => {
-        console.log("Linked Clicked");
-
+if (document.readyState === "loading") {
+    // The document is still loading, so listen for the DOMContentLoaded event
+    document.addEventListener('DOMContentLoaded', (event) => {
+        initializeEventListeners();
     });
-});
- });  
-  
+} else {
+    // The DOMContentLoaded event has already fired, so run the function immediately
+    initializeEventListeners();
+}
+
+function initializeEventListeners() {
+    console.log("DOM Loaded");
+    document.querySelectorAll('.contact').forEach(item => {
+        item.addEventListener('click', event => {
+            console.log("SUCESS");
+        });
+    });
+}
+
+
 </script>
