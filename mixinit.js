@@ -46,7 +46,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
       
         var pageTitle = document.title;
-		console.log("The title of the page is: " + pageTitle);
+		console.log("The TITLE of the page is: " + pageTitle);
       	var currentDomain = window.location.hostname;
 		console.log("Current domain: " + currentDomain);
       	var currentPath = window.location.pathname;
@@ -86,12 +86,26 @@ if (document.readyState === "loading") {
 
 function initializeEventListeners() {
     console.log("DOM Loaded");
-    document.querySelectorAll('.contact').forEach(item => {
+    document.querySelectorAll('.contact:not(div)').forEach(item => {
         item.addEventListener('click', event => {
             console.log("SUCESS");
+        const clickedElement = event.target; // This is the element that was clicked
+        // Using closest to ensure we get the <a> tag even if the click was on a descendant
+        const actualLinkElement = clickedElement.closest('a');    
+          //console.log("actualLinkElement: ", actualLinkElement);
+          if (actualLinkElement) {
+             // Get the href attribute of the closest <a> element
+            const actualHref = actualLinkElement.getAttribute('href');
+            //console.log(actualHref);
+            mixpanel.track("Contact", {
+                "Channel": actualHref,
+                "URL Path": location.pathname
+            });
+            event.stopPropagation();
+          }
+		
         });
     });
 }
-
-
 </script>
+
