@@ -1,3 +1,4 @@
+<style type="text/css" id="form-designer-style">
     /* Injected CSS Code */
 
 /* Begining of advanced designer */
@@ -5,7 +6,7 @@
 /*  1 - Preferences style */
 /*  1 - FONT FAMILY */
 .form-all {
-  font-family : kyrial-display-pro, sans-serif !important;
+  font-family: "Inter", sans-serif;
 }
 /* 2 - FORM WIDTH */
 .form-all {
@@ -201,7 +202,7 @@ li[data-type="control_button"] button.jf-form-buttons.form-pagebreak-back:hover 
 }
 .form-all .form-pagebreak-back,
 .form-all .form-pagebreak-next {
-  font-family : kyrial-display-pro, sans-serif !important;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: normal;
 }
@@ -395,10 +396,6 @@ div.form-header-group.hasImage {
     box-shadow : none;
 }
 
-.input-2:hover {
-
-}
-
 .form-submit-button.submit-button.jf-form-buttons.jsTest-submitField:hover {
     color : black;
     background : white;
@@ -407,10 +404,15 @@ div.form-header-group.hasImage {
 .supernova .form-all, .form-all {
     border : none !important;
     box-shadow : none !important;
+    font-family : kyrial-display-pro, sans-serif !important;
 }
 
 .form-buttons-wrapper, .form-submit-clear-wrapper {
     border-top : none !important;
+}
+
+.form-dropdown, ::placeholder, .form-checkbox-item label {
+    color : #d0d6d6 !important;
 }
 
 
