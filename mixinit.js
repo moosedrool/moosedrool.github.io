@@ -46,7 +46,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
       
         var pageTitle = document.title;
-		console.log("The title of the page is: " + pageTitle);
+		console.log("The TITLE of the page is: " + pageTitle);
       	var currentDomain = window.location.hostname;
 		console.log("Current domain: " + currentDomain);
       	var currentPath = window.location.pathname;
@@ -102,9 +102,21 @@ function initializeEventListeners() {
                 "URL Path": location.pathname
             });
             event.stopPropagation();
-          }
-		
+          }		
         });
     });
+
+
+    // New event listener for submit button
+    const submitButton = document.getElementById('233031288507150'); // Replace with your button's ID
+    if (submitButton) {
+        submitButton.addEventListener('click', handleSubmitButtonClick);
+    }	
+}
+
+function handleSubmitButtonClick(event) {
+    console.log("Submit button clicked");
+    // Logic for handling submit button click
+    // ...
 }
 </script>
