@@ -147,7 +147,7 @@ li[data-type="control_button"] button.jf-form-buttons.form-pagebreak-back:hover 
 }
 .form-all .form-pagebreak-back,
 .form-all .form-pagebreak-next {
-  font-family: "Inter", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: normal;
 }
@@ -316,7 +316,7 @@ div.form-header-group.hasImage {
 
 /*PREFERENCES STYLE*/
     .form-all {
-      font-family: Inter, sans-serif;
+      font-family: inherit;
     }
   
     .form-label.form-label-auto {
