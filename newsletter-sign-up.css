@@ -1,64 +1,9 @@
+
 <style type="text/css" id="form-designer-style">
     /* Injected CSS Code */
 
 /* Begining of advanced designer */
-/*PREFERENCES STYLE*/
-/*  1 - Preferences style */
-/*  1 - FONT FAMILY */
-.form-all {
-  font-family: "Inter", sans-serif;
-}
-/* 2 - FORM WIDTH */
-.form-all {
-  max-width: 752px;
-}
-/* 5 - FONT SIZE */
-.form-all {
-  font-size: 16px;
-}
-/* 5 - input bg color */
-.form-textbox,
-.form-textarea,
-.form-radio-other-input,
-.form-checkbox-other-input,
-.form-captcha input,
-.form-spinner input {
-  background-color: #ffffff;
-}
-/* 10 - LINE SPACING */
-.form-line {
-  margin-top: 12px;
-  margin-bottom: 12px;
-}
-.supernova .form-all,
-.form-all {
-  background-color: rgba(255, 255, 255, 0);
-}
-.supernova {
-  background-color: rgba(255, 255, 255, 0);
-}
-.supernova body {
-  background-color: transparent;
-}
-.form-all,
-.form-label-top,
-.form-label-left,
-.form-label-right,
-.form-html,
-.form-checkbox-item label,
-.form-radio-item label,
-span.FITB .qb-checkbox-label,
-span.FITB .qb-radiobox-label,
-span.FITB .form-radio label,
-span.FITB .form-checkbox label,
-[data-blotid][data-type=checkbox] [data-labelid],
-[data-blotid][data-type=radiobox] [data-labelid],
-span.FITB-inptCont[data-type=checkbox] label,
-span.FITB-inptCont[data-type=radiobox] label,
-.form-sub-label {
-  color: #d0d6d6;
-}
-/*PREFERENCES STYLE*/
+
 /* 17 - INPUT WIDTHS */
 /*  20 - FORM PADDING */
 ul.form-section {
@@ -369,7 +314,107 @@ div.form-header-group.hasImage {
 }
 /* 29 - FORM COLUMNS */
 
-/*__INSPECT_SEPERATOR__*/
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Inter, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+  
+    .form-all {
+      max-width: 752px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 230px;
+    }
+  
+    .form-all {
+      font-size: 16px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: rgba(255,255,255,0);
+    }
+  
+    .form-all {
+      color: rgb(208, 214, 214);
+    }
+    .form-header-group .form-header {
+      color: rgb(208, 214, 214);
+    }
+    .form-header-group .form-subHeader {
+      color: rgb(208, 214, 214);
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label,
+    span.FITB .qb-checkbox-label,
+    span.FITB .qb-radiobox-label,
+    span.FITB .form-radio label,
+    span.FITB .form-checkbox label,
+    [data-blotid][data-type=checkbox] [data-labelid],
+    [data-blotid][data-type=radiobox] [data-labelid],
+    span.FITB-inptCont[data-type=checkbox] label,
+    span.FITB-inptCont[data-type=radiobox] label {
+      color: rgb(208, 214, 214);
+    }
+    .form-sub-label {
+      color: 1a1a1a;
+    }
+  
+  .supernova {
+    background-color: #ffffff;
+  }
+  .supernova body {
+    background: transparent;
+  }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: rgb(255, 255, 255);
+    }
+  
+      
+    .supernova {
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-attachment: fixed;
+      background-position: center top;
+    }
+
+      .supernova, #stage {
+        background-image: none;
+      }
+    
+      .form-all {
+        background-image: none;
+      }
+    /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
 .form-label.form-label-top {
     display : none;
 }
