@@ -435,8 +435,7 @@ div.form-header-group.hasImage {
 
 .form-section.page-section {
     background-image : transparent;
-    /* background-image : linear-gradient(to right, #2e2b82, #00a69c);
-    */;
+    background-image : linear-gradient(to right, #2e2b82, #00a69c);
     border : none;
     box-shadow : none;
 }
