@@ -959,5 +959,23 @@ li[data-type="control_image"] img {
 #input_7 {
     margin-top: 20px;
 }
+
+/* deskop formatting */
+@media (min-width: 480px) {
+  .form-all {
+    margin-top: -50px !important;
+    margin-left: -20px !important;
+    text-align: left !important;
+    padding-left: 0px !important;
+  }
+ }
+
+/*mobile formatting*/
+@media (max-width: 480px) {
+      .form-all {
+        margin-top: -10px !important;
+        margin-left: -25px !important;
+      } 
+ }
     /* Injected CSS Code */
 </style>
