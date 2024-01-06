@@ -42,11 +42,10 @@
   white-space: normal;
 }
 .form-label.form-label-auto {
-  display: inline-block;
-  float: left;
-  text-align: left;
+  display: block;
+  float: none;
   word-break: break-word;
-  width: 150px;
+  text-align: left;
 }
 .form-label-left {
   display: inline-block;
@@ -246,7 +245,7 @@
   margin-bottom: 12px;
 }
 .form-line {
-  padding: 12px 36px;
+  padding: 0px 0px;
 }
 .form-all .form-textbox,
 .form-all .form-radio-other-input,
@@ -278,14 +277,18 @@
 .form-submit-reset,
 .form-submit-print {
   width: 350px;
-  font-size: 1em;
-  padding: 9px 15px;
+  font-size: 1.15em;
+  padding: 12px 18px;
   font-size: 20px;
   font-weight: normal;
   font-family: inherit;
 }
 .submit-button {
   font-family: inherit;
+}
+.form-submit-print {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 .qq-upload-button,
 .submit-button,
