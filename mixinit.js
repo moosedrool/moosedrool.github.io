@@ -110,13 +110,13 @@ function initializeEventListeners() {
 
 
     // New event listener for submit button
-    const submitButton = document.getElementById('233031288507150'); // Replace with your button's ID
-    if (submitButton) {
-        submitButton.addEventListener('submit', handleSubmitButtonClick);
+    const ApptSubmitButton = document.getElementById('233031288507150'); // Replace with your button's ID
+    if (ApptSubmitButton) {
+        ApptSubmitButton.addEventListener('submit', handleApptSubmitButtonClick);
     }	
 }
 
-function handleSubmitButtonClick(event) {
+function handleApptSubmitButtonClick(event) {
     console.log("Submit button clicked");
     var emailValue = document.getElementById('input_1').value;  // Capture email value
     var newsletterSubscription = document.getElementById('input_5_0').checked;  // Capture checkbox state
