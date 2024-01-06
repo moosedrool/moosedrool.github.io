@@ -113,7 +113,15 @@ function initializeEventListeners() {
     const ApptSubmitButton = document.getElementById('233031288507150'); // Replace with your button's ID
     if (ApptSubmitButton) {
         ApptSubmitButton.addEventListener('submit', handleApptSubmitButtonClick);
-    }	
+    }
+
+
+    const NewsletterSubmitButton = document.getElementById('233516764469063'); // Replace with your button's ID
+    if (NewsletterSubmitButton) {
+        NewsletterSubmitButton.addEventListener('submit', handleNewsletterSubmitButtonClick);
+    }
+
+	
 }
 
 function handleApptSubmitButtonClick(event) {
@@ -170,6 +178,50 @@ function handleApptSubmitButtonClick(event) {
             'Service Line': serviceLine, 
             'newsletter': newsletterSubscription,
             'Phone Number': phone_number,
+            '$email' : emailValue,
+           "current_page_title":  pageTitle,
+           "current_domain":    currentDomain,
+           "current_url_path":    currentPath,
+           "current_url_protocol":  currentProtocol,
+           "current_url_search":  queryString  });
+    }
+	
+}
+
+
+function handleNewsletterSubmitButtonClick(event) {
+    console.log("Submit button clicked");
+    var emailValue = document.getElementById('input_3').value;  // Capture email value
+    var newsletterSubscription = document.getElementById('input_4_0').checked;  // Capture checkbox state
+    var serviceLine = document.getElementById('input_5').value;
+
+
+    var dataObject = {
+      $email: emailValue,  // Structure data into JSON object
+      newsletter: newsletterSubscription,  // Add newsletter subscription status to JSON object
+      serviceLine: serviceLine
+    };
+    
+    var pageTitle = document.title;
+    console.log("The title of the page is: " + pageTitle);
+    var currentDomain = window.location.hostname;
+    console.log("Current domain: " + currentDomain);
+    var currentPath = window.location.pathname;
+    console.log("Current path: " + currentPath);
+    var currentProtocol = window.location.protocol;
+    console.log("Current protocol: " + currentProtocol);
+    var queryString = window.location.search;
+    console.log("Query string: " + queryString);
+	
+    mixpanel.identify(emailValue);
+    mixpanel.people.set(dataObject);
+                      
+    if (newsletterSubscription) {
+    console.log("Checkbox is checked. Doing some stuff...");
+    
+         mixpanel.track('Newsletter Sign Up', {
+            'Service Line': serviceLine, 
+            'newsletter': newsletterSubscription,
             '$email' : emailValue,
            "current_page_title":  pageTitle,
            "current_domain":    currentDomain,
