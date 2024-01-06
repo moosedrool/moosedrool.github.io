@@ -949,6 +949,7 @@ li[data-type="control_image"] img {
     font-family : kyrial-display-pro, sans-serif !important;
 }
 
+#input_16_addr_line1, #input_16_addr_line2 {display: none !important;}
 
     /* Injected CSS Code */
 </style>
