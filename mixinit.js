@@ -220,7 +220,7 @@ function handleNewsletterSubmitButtonClick(event) {
     console.log("Checkbox is checked. Doing some stuff...");
     
          mixpanel.track('Newsletter Sign Up', {
-            'Service Line': serviceLine, 
+            'Newsletter Topic': serviceLine, 
             'newsletter': newsletterSubscription,
             '$email' : emailValue,
            "current_page_title":  pageTitle,
