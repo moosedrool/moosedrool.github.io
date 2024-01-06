@@ -121,6 +121,11 @@ function initializeEventListeners() {
         NewsletterSubmitButton.addEventListener('submit', handleNewsletterSubmitButtonClick);
     }
 
+    const EventSubmitButton = document.getElementById('240048129691154'); // Replace with your button's ID
+    if (EventSubmitButton) {
+        EventSubmitButton.addEventListener('submit', handleEventSubmitButtonClick);
+    }
+
 	
 }
 
@@ -229,6 +234,56 @@ function handleNewsletterSubmitButtonClick(event) {
            "current_url_protocol":  currentProtocol,
            "current_url_search":  queryString  });
     }
+	
+}
+
+
+function handleEventSubmitButtonClick(event) {
+    console.log("Submit button clicked");
+    var emailValue = document.getElementById('input_7').value;  // Capture email value
+    var Consent = document.getElementById('input_17_0').checked;  // Capture checkbox state
+    var Location = document.getElementById('input_20').value;
+    var FirstName = document.getElementById('first_4').value;
+    var LastName = document.getElementById('last_4').value;
+	
+    var dataObject = {
+      $email: emailValue,  // Structure data into JSON object
+      newsletter: true,  // Add newsletter subscription status to JSON object
+      Location: location,
+      $name: FirstName + " " + LastName,
+      FirstName: FirstName,
+      LastName: LastName,	
+    };
+    
+    var pageTitle = document.title;
+    console.log("The title of the page is: " + pageTitle);
+    var currentDomain = window.location.hostname;
+    console.log("Current domain: " + currentDomain);
+    var currentPath = window.location.pathname;
+    console.log("Current path: " + currentPath);
+    var currentProtocol = window.location.protocol;
+    console.log("Current protocol: " + currentProtocol);
+    var queryString = window.location.search;
+    console.log("Query string: " + queryString);
+	
+    mixpanel.identify(emailValue);
+    mixpanel.people.set(dataObject);
+                      
+    if (newsletterSubscription) {
+    console.log("Checkbox is checked. Doing some stuff...");
+    
+         mixpanel.track('Contact', {
+            'Newsletter Topic': "Hearing Loss", 
+            'newsletter': newsletterSubscription,
+	    'Event Consent': "true",
+            '$email' : emailValue,
+           "current_page_title":  pageTitle,
+           "current_domain":    currentDomain,
+           "current_url_path":    currentPath,
+           "current_url_protocol":  currentProtocol,
+           "current_url_search":  queryString  });
+    }
+
 	
 }
 </script>
