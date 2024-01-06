@@ -250,7 +250,7 @@ function handleEventSubmitButtonClick(event) {
       $email: emailValue,  // Structure data into JSON object
       newsletter: true,  // Add newsletter subscription status to JSON object
       serviceLine: "Cochlear Implants",
-      Location: location,
+      Location: Location,
       $name: FirstName + " " + LastName,
       FirstName: FirstName,
       LastName: LastName,	
@@ -271,18 +271,7 @@ function handleEventSubmitButtonClick(event) {
     mixpanel.people.set(dataObject);
                       
 
-    
-         mixpanel.track('Contact', {
-	    "Channel": "AMA Event Sign Up",
-            'Service Line': "Cochlear Implants",
-            'newsletter': true,
-	    'Event Consent': "true",
-            '$email' : emailValue,
-           "current_page_title":  pageTitle,
-           "current_domain":    currentDomain,
-           "current_url_path":    currentPath,
-           "current_url_protocol":  currentProtocol,
-           "current_url_search":  queryString  });
+
 	
 }
 </script>
