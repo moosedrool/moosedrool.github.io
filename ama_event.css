@@ -1,4 +1,3 @@
-
 <style type="text/css">
     .form-label-left{
         width:150px;
@@ -42,12 +41,7 @@
 .form-label {
   white-space: normal;
 }
-.form-label.form-label-auto {
-  display: block;
-  float: none;
-  word-break: break-word;
-  text-align: left;
-}
+
 .form-label-left {
   display: inline-block;
   white-space: normal;
@@ -949,7 +943,13 @@ li[data-type="control_image"] img {
     font-family : kyrial-display-pro, sans-serif !important;
 }
 
-#input_16_addr_line1, #input_16_addr_line2 {display: none !important;}
-
+.form-label.form-label-auto {
+        
+      display: block;
+      float: none;
+      text-align: left;
+      width: 100%;
+    
+      }
     /* Injected CSS Code */
 </style>
