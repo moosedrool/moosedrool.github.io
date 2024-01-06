@@ -41,7 +41,12 @@
 .form-label {
   white-space: normal;
 }
-
+.form-label.form-label-auto {
+  display: block;
+  float: none;
+  word-break: break-word;
+  text-align: left;
+}
 .form-label-left {
   display: inline-block;
   white-space: normal;
@@ -944,39 +949,31 @@ li[data-type="control_image"] img {
 }
 
 .form-label.form-label-auto {
-        
-      display: block;
-      float: none;
-      text-align: left;
-      width: 100%;
-    
-      }
+    display : block;
+    float : none;
+    text-align : left;
+    width : 100%;
+}
 
 #label_input_17_0 {
     line-height : 25px !important;
 }
 
 #input_7 {
-    margin-top: 20px;
+    margin-top : 20px;
 }
 
 /* deskop formatting */
-@media (min-width: 480px) {
-  .form-all {
-    margin-top: -50px !important;
-    margin-left: -20px !important;
-    text-align: left !important;
-    padding-left: 0px !important;
-    padding-top: 0px !important;
-  }
- }
+@media (min-width: 480px){
+}
 
 /*mobile formatting*/
-@media (max-width: 480px) {
-      .form-all {
-        margin-top: -10px !important;
-        margin-left: -25px !important;
-      } 
- }
+}
+
+
+@media (max-width: 480px){
+}
+
+
     /* Injected CSS Code */
 </style>
