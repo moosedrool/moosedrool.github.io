@@ -249,6 +249,7 @@ function handleEventSubmitButtonClick(event) {
     var dataObject = {
       $email: emailValue,  // Structure data into JSON object
       newsletter: true,  // Add newsletter subscription status to JSON object
+      serviceLine: "Cochlear Implants",
       Location: location,
       $name: FirstName + " " + LastName,
       FirstName: FirstName,
@@ -269,12 +270,12 @@ function handleEventSubmitButtonClick(event) {
     mixpanel.identify(emailValue);
     mixpanel.people.set(dataObject);
                       
-    if (newsletterSubscription) {
-    console.log("Checkbox is checked. Doing some stuff...");
+
     
          mixpanel.track('Contact', {
-            'Newsletter Topic': "Hearing Loss", 
-            'newsletter': newsletterSubscription,
+	    "Channel": "AMA Event Sign Up",
+            'Service Line': "Cochlear Implants",
+            'newsletter': true,
 	    'Event Consent': "true",
             '$email' : emailValue,
            "current_page_title":  pageTitle,
@@ -282,8 +283,6 @@ function handleEventSubmitButtonClick(event) {
            "current_url_path":    currentPath,
            "current_url_protocol":  currentProtocol,
            "current_url_search":  queryString  });
-    }
-
 	
 }
 </script>
