@@ -253,7 +253,7 @@ function handleEventSubmitButtonClick(event) {
       Location: Location,
       $name: FirstName + " " + LastName,
       FirstName: FirstName,
-      LastName: LastName,	
+      LastName: LastName	
     };
     
     var pageTitle = document.title;
