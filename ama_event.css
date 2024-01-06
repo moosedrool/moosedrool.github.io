@@ -12,7 +12,7 @@
     .form-all{
         width:690px;
         color:#267a87 !important;
-        font-family: inherit;
+        font-family:inherit;
         font-size:20px;
     }
     .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
@@ -399,11 +399,11 @@
   background-position: center top;
 }
 .form-line {
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .form-line {
-  padding: 10px 0px;
+  padding: 0px 0px;
 }
 .form-all .form-textbox,
 .form-all .form-radio-other-input,
@@ -922,107 +922,7 @@ li[data-type="control_image"] img {
 }
 /* | */
 
-/*PREFERENCES STYLE*/
-    .form-all {
-      font-family: inherit;
-    }
-  
-    .form-label.form-label-auto {
-      
-    display: block;
-    float: none;
-    text-align: left;
-    width: 100%;
-  
-    }
-  
-    .form-line {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  
-    .form-all {
-      max-width: 690px;
-      width: 100%;
-    }
-  
-    .form-label.form-label-left,
-    .form-label.form-label-right,
-    .form-label.form-label-left.form-label-auto,
-    .form-label.form-label-right.form-label-auto {
-      width: 150px;
-    }
-  
-    .form-all {
-      font-size: 20px
-    }
-  
-    .supernova .form-all, .form-all {
-      background-color: rgba(255,255,255,0);
-    }
-  
-    .form-all {
-      color: #267a87;
-    }
-    .form-header-group .form-header {
-      color: #267a87;
-    }
-    .form-header-group .form-subHeader {
-      color: #267a87;
-    }
-    .form-label-top,
-    .form-label-left,
-    .form-label-right,
-    .form-html,
-    .form-checkbox-item label,
-    .form-radio-item label,
-    span.FITB .qb-checkbox-label,
-    span.FITB .qb-radiobox-label,
-    span.FITB .form-radio label,
-    span.FITB .form-checkbox label,
-    [data-blotid][data-type=checkbox] [data-labelid],
-    [data-blotid][data-type=radiobox] [data-labelid],
-    span.FITB-inptCont[data-type=checkbox] label,
-    span.FITB-inptCont[data-type=radiobox] label {
-      color: #267a87;
-    }
-    .form-sub-label {
-      color: #4094a1;
-    }
-  
-  .supernova {
-    background-color: undefined;
-  }
-  .supernova body {
-    background: transparent;
-  }
-  
-    .form-textbox,
-    .form-textarea,
-    .form-dropdown,
-    .form-radio-other-input,
-    .form-checkbox-other-input,
-    .form-captcha input,
-    .form-spinner input {
-      background-color: undefined;
-    }
-  
-      
-    .supernova {
-      background-repeat: no-repeat;
-      background-size:cover;
-      background-attachment: fixed;
-      background-position: center top;
-    }
-
-      .supernova, #stage {
-        background-image: none;
-      }
-    
-      .form-all {
-        background-image: none;
-      }
-    /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+/*__INSPECT_SEPERATOR__*/
 .form-required {
     visibility : hidden;
 }
