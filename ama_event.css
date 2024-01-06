@@ -3,8 +3,8 @@
         width:150px;
     }
     .form-line{
-        padding-top:12px;
-        padding-bottom:12px;
+        padding-top:20px;
+        padding-bottom:20px;
     }
     .form-label-right{
         width:150px;
@@ -29,7 +29,7 @@
   clear: both;
 }
 .form-all {
-    font-family: inherit;
+  font-family: inherit;
 }
 .form-all {
   width: 690px;
@@ -72,8 +72,35 @@
   font-size: 20px;
 }
 .form-label {
+  position: relative;
+}
+.form-label:after {
+  content: 'This label will not be seen on the form.';
+  background: #FFFFE0;
+  position: absolute;
+  left: 0;
+  top: 110%;
+  width: 90px;
+  opacity: 0;
+  padding: 6px 9px 8px;
+  border-radius: 3px;
+  font-size: 10px;
   font-weight: normal;
-  font-size: 0.95em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form-label:hover:after {
+  opacity: 0.8;
+}
+.supernova .form-label:after {
+  display: none;
+}
+.jotform-form .form-line[data-type="control_textbox"] .form-label,
+.jotform-form .form-line[data-type="control_textarea"] .form-label,
+.jotform-form .form-line[data-type="control_fullname"] .form-label,
+.jotform-form .form-line[data-type="control_email"] .form-label,
+.jotform-form .form-line[data-type="control_address"] .form-label,
+.jotform-form .form-line[data-type="control_phone"] .form-label {
+  display: none;
 }
 .supernova {
   background-color: rgba(255, 255, 255, 0);
@@ -149,16 +176,6 @@
 }
 .form-sub-label {
   color: #319eaf;
-}
-.form-label-top,
-.form-label-left,
-.form-label-right,
-.form-html {
-  color: #319eaf;
-}
-.form-checkbox-item label,
-.form-radio-item label {
-  color: #267a87;
 }
 .form-line.form-line-active {
   -webkit-transition-property: all;
@@ -386,7 +403,7 @@
   margin-bottom: 12px;
 }
 .form-line {
-  padding: 0px 0px;
+  padding: 10px 0px;
 }
 .form-all .form-textbox,
 .form-all .form-radio-other-input,
@@ -600,6 +617,10 @@ h2 ~ .form-subHeader {
 [data-type="control_dropdown"] .form-input,
 [data-type="control_dropdown"] .form-input-wide {
   width: 150px;
+}
+.form-label {
+  margin-bottom: 0px;
+  margin-right: 0;
 }
 li[data-type="control_image"] div {
   text-align: left;
@@ -901,7 +922,107 @@ li[data-type="control_image"] img {
 }
 /* | */
 
-/*__INSPECT_SEPERATOR__*/
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: inherit;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  
+    }
+  
+    .form-line {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .form-all {
+      max-width: 690px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 150px;
+    }
+  
+    .form-all {
+      font-size: 20px
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: rgba(255,255,255,0);
+    }
+  
+    .form-all {
+      color: #267a87;
+    }
+    .form-header-group .form-header {
+      color: #267a87;
+    }
+    .form-header-group .form-subHeader {
+      color: #267a87;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label,
+    span.FITB .qb-checkbox-label,
+    span.FITB .qb-radiobox-label,
+    span.FITB .form-radio label,
+    span.FITB .form-checkbox label,
+    [data-blotid][data-type=checkbox] [data-labelid],
+    [data-blotid][data-type=radiobox] [data-labelid],
+    span.FITB-inptCont[data-type=checkbox] label,
+    span.FITB-inptCont[data-type=radiobox] label {
+      color: #267a87;
+    }
+    .form-sub-label {
+      color: #4094a1;
+    }
+  
+  .supernova {
+    background-color: undefined;
+  }
+  .supernova body {
+    background: transparent;
+  }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: undefined;
+    }
+  
+      
+    .supernova {
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-attachment: fixed;
+      background-position: center top;
+    }
+
+      .supernova, #stage {
+        background-image: none;
+      }
+    
+      .form-all {
+        background-image: none;
+      }
+    /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
 .form-required {
     visibility : hidden;
 }
