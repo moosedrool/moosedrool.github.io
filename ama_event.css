@@ -951,5 +951,13 @@ li[data-type="control_image"] img {
       width: 100%;
     
       }
+
+#label_input_17_0 {
+    line-height : 25px !important;
+}
+
+#input_7 {
+    margin-top: 20px;
+}
     /* Injected CSS Code */
 </style>
