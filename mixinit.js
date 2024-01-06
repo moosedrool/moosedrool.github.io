@@ -270,8 +270,17 @@ function handleEventSubmitButtonClick(event) {
     mixpanel.identify(emailValue);
     mixpanel.people.set(dataObject);
                       
-
-
-	
+    mixpanel.track('Contact', {
+      	"Channel": "AMA Event Sign Up",
+        'Service Line': "Cochlear Implants",
+        'newsletter': true,
+      	'Event Consent': "true",
+        '$email' : emailValue,
+        "current_page_title":  pageTitle,
+        "current_domain":    currentDomain,
+        "current_url_path":    currentPath,
+        "current_url_protocol":  currentProtocol,
+        "current_url_search":  queryString  });	
 }
+
 </script>
