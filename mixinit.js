@@ -84,11 +84,11 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 	if (AdSuperProperty) {
 	    var contacts = document.getElementsByClassName("contact");
 	    for (var i = 0; i < contacts.length; i++) {
-		// Check if the href attribute does not contain 'spruce.care'
-		if (!contacts[i].getAttribute("href").includes("spruce.care")) {
-		    contacts[i].textContent = "(206) 466-3795";
-		    contacts[i].setAttribute("href", "tel://2064663795");
-		}
+	        // Check if the href attribute does not contain 'spruce.care'
+	        if (!contacts[i].getAttribute("href").includes("spruce.care")) {
+	            contacts[i].textContent = "(206) 466-3795";
+	            contacts[i].setAttribute("href", "tel://2064663795");
+	        }
 	    }
 	}
 
@@ -96,6 +96,9 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
 
 
+	    
+    	
+    }
 });
 
 </script>
