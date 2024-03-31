@@ -74,13 +74,16 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 	var AdSuperProperty = mixpanel.get_property('Ad');
 	console.log("AdSuperProperty: " + AdSuperProperty);
 
-        if (AdSuperProperty) {
-            var contacts = document.getElementsByClassName("contact");
-            for (var i = 0; i < contacts.length; i++) {
-                contacts[i].textContent = "(206) 466-3795";
-                contacts[i].setAttribute("href", "tel://2064663795");
-            }
-        }
+	if (AdSuperProperty) {
+	    var contacts = document.getElementsByClassName("contact");
+	    for (var i = 0; i < contacts.length; i++) {
+	        // Check if the href attribute does not contain 'spruce.care'
+	        if (!contacts[i].getAttribute("href").includes("spruce.care")) {
+	            contacts[i].textContent = "(206) 123-4567";
+	            contacts[i].setAttribute("href", "tel://2061234567");
+	        }
+	    }
+	}
 
 
 
