@@ -69,9 +69,9 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
 	let keywords = ['gclid', 'wbraid', 'gbraid'];
 	let advert = keywords.some(keyword => queryString.includes(keyword));
-    	console.log(advert);
-	
-	
+    	console.log("Advert: " +advert);
+	mixpanel.people.set_once({ "Ad": advert });
+
     	
     }
 });
