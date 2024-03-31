@@ -66,6 +66,13 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
           	"current_url_protocol":	currentProtocol,
           	"current_url_search":	queryString              
         }); //should have all your URL params on there 
+
+	let keywords = ['gclid', 'wbraid', 'gbraid'];
+	let advert = keywords.some(keyword => current_url_search.includes(keyword));
+    	console.log(advert);
+	
+	
+    	
     }
 });
 
