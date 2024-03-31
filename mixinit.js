@@ -79,8 +79,8 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 	    for (var i = 0; i < contacts.length; i++) {
 	        // Check if the href attribute does not contain 'spruce.care'
 	        if (!contacts[i].getAttribute("href").includes("spruce.care")) {
-	            contacts[i].textContent = "(206) 123-4567";
-	            contacts[i].setAttribute("href", "tel://2061234567");
+	            contacts[i].textContent = "(206) 466-3795";
+	            contacts[i].setAttribute("href", "tel://2064663795");
 	        }
 	    }
 	}
