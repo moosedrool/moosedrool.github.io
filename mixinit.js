@@ -70,8 +70,9 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 	let keywords = ['gclid', 'wbraid', 'gbraid'];
 	let advert = keywords.some(keyword => queryString.includes(keyword));
     	console.log("Advert: " +advert);
-	mixpanel.people.set_once({ "Ad": advert });
-
+	mixpanel.register_once({ "Ad": advert });
+	var propertyValue = mixpanel.get_property('property_name');
+	console.log("Super properties: " + property_name);
     	
     }
 });
