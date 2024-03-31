@@ -75,6 +75,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 	console.log("AdSuperProperty: " + AdSuperProperty);
 
 	if (AdSuperProperty) {
+	    console.log("AdSuperProperty set and inside If loop");
 	    var contacts = document.getElementsByClassName("contact");
 	    for (var i = 0; i < contacts.length; i++) {
 	        // Check if the href attribute does not contain 'spruce.care'
