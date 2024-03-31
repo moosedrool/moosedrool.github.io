@@ -72,7 +72,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
     	console.log("Advert: " +advert);
 	mixpanel.register_once({ "Ad": advert });
 	var propertyValue = mixpanel.get_property('property_name');
-	console.log("Super properties: " + property_name);
+	console.log("Super properties: " + propertyValue);
     	
     }
 });
