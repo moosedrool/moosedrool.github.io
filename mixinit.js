@@ -71,8 +71,8 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 	let advert = keywords.some(keyword => queryString.includes(keyword));
     	console.log("Advert: " +advert);
 	mixpanel.register_once({ "Ad": advert });
-	var allSuperProperties = mixpanel.get_properties();
-	console.log("Super properties: " + allSuperProperties);
+	var AdSuperProperty = mixpanel.get_property('Ad');
+	console.log("AdSuperProperty: " + AdSuperProperty);
     	
     }
 });
