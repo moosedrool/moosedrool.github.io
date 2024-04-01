@@ -78,13 +78,17 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 	    var contacts = document.getElementsByClassName("contact");
 	    for (var i = 0; i < contacts.length; i++) {
 	        var hrefAttribute = contacts[i].getAttribute("href");
-	        if (hrefAttribute && !hrefAttribute.includes("spruce.care")) {
+	        if (hrefAttribute && !hrefAttribute.includes("sms")) {
+	            contacts[i].textContent = "(206) 466-3795";
+	            contacts[i].setAttribute("href", "sms://2064663795&amp;body=We're excited to connect through texting! Texting is convenient, but it is not the safest method for sharing sensitive details like insurance information or birth dates. For secure communications, the next message will have a link to our portal.   Send THIS text and then &quot;yes&quot; to affirm your understanding. Let us know how we can help you.");
+	        }
+
+		else if (hrefAttribute && !hrefAttribute.includes("tel")) {
 	            contacts[i].textContent = "(206) 466-3795";
 	            contacts[i].setAttribute("href", "tel://2064663795");
-	        }
+	        }    
 	    }
 	}
-
 
 
 
