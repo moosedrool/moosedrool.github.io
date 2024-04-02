@@ -45,6 +45,17 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
         });
 
 
+        var pageTitle = document.title;
+		console.log("The T I T L Z of the page is: " + pageTitle);
+      	var currentDomain = window.location.hostname;
+		console.log("Current domain: " + currentDomain);
+      	var currentPath = window.location.pathname;
+		console.log("Current path: " + currentPath);
+      	var currentProtocol = window.location.protocol;
+		console.log("Current protocol: " + currentProtocol);
+		var queryString = window.location.search;
+		console.log("Query string: " + queryString);
+
 	let keywords = ['gclid', 'wbraid', 'gbraid'];
 	let advert = keywords.some(keyword => queryString.includes(keyword));
     	console.log("Advert: " +advert);
@@ -68,19 +79,6 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 	    }
 	}
 	    
-      
-        var pageTitle = document.title;
-		console.log("The T I T L Z of the page is: " + pageTitle);
-      	var currentDomain = window.location.hostname;
-		console.log("Current domain: " + currentDomain);
-      	var currentPath = window.location.pathname;
-		console.log("Current path: " + currentPath);
-      	var currentProtocol = window.location.protocol;
-		console.log("Current protocol: " + currentProtocol);
-		var queryString = window.location.search;
-		console.log("Query string: " + queryString);
-
-
       
         mixpanel.track('$mp_web_page_view', {
           	"event":		"$mp_web_page_view",
