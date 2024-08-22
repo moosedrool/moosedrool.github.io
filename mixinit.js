@@ -221,7 +221,12 @@ function handleApptSubmitButtonClick(event) {
            "current_url_protocol":  currentProtocol,
            "current_url_search":  queryString  });
     }
-    event.target.submit();  // Now submit the form
+
+    setTimeout(function() {
+	event.target.submit();
+    }, 300);  // 300ms delay before submission
+	
+    //event.target.submit();  // Now submit the form
 }
 
 
