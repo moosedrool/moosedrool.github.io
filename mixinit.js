@@ -160,6 +160,7 @@ function initializeEventListeners() {
 }
 
 function handleApptSubmitButtonClick(event) {
+    event.preventDefault(); // Prevent the default form submission
     console.log("Submit button clicked");
     var emailValue = document.getElementById('input_1').value;  // Capture email value
     var newsletterSubscription = document.getElementById('input_5_0').checked;  // Capture checkbox state
@@ -220,7 +221,7 @@ function handleApptSubmitButtonClick(event) {
            "current_url_protocol":  currentProtocol,
            "current_url_search":  queryString  });
     }
-	
+    event.target.submit();  // Now submit the form
 }
 
 
