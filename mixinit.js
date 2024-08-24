@@ -205,8 +205,16 @@ function handleApptSubmitButtonClick(event) {
                       "current_url_path":   currentPath,
                       "current_url_protocol": currentProtocol,
                       "current_url_search": queryString       
-                      });
-                      
+                      }, function() {
+        // Callback function to be executed after mixpanel.track has finished processing
+        console.log("Mixpanel track call completed, now submitting the form.");
+        event.target.submit();  // Manually trigger the form submission
+    });
+
+
+
+
+	
     if (newsletterSubscription) {
     console.log("Checkbox is checked. Doing some stuff...");
     
