@@ -230,9 +230,9 @@ function handleApptSubmitButtonClick(event) {
            "current_url_search":  queryString  });
     }
 
-    setTimeout(function() {
-	event.target.submit();
-    }, 300);  // 300ms delay before submission
+ //    setTimeout(function() {
+	// event.target.submit();
+ //    }, 300);  // 300ms delay before submission
 	
     //event.target.submit();  // Now submit the form
 }
