@@ -2,7 +2,7 @@
     {
         "CPT_Code":"95004",
         "Descrip":"95004",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":4.8924,
         "Reimbursement_offer_Premera_PMC":103.6525423729,
         "Reimbursement_offer_Regence":5.544,
@@ -17,7 +17,7 @@
     {
         "CPT_Code":"95024",
         "Descrip":"95024",
-        "Description_FH":"INTRACUTANEOUS TESTS W\/ALLERGENIC EXTRACTS",
+        "Description_FH":"Intracutaneous tests w\/allergenic extracts",
         "Reimbursement_offer_Premera":10.1925,
         "Reimbursement_offer_Premera_PMC":105.8411214953,
         "Reimbursement_offer_Regence":11.55,
@@ -32,7 +32,7 @@
     {
         "CPT_Code":"95115",
         "Descrip":"95115",
-        "Description_FH":"PROF SVCS ALLG IMMNTX X W\/PRV ALLGIC XTRCS 1 NJX",
+        "Description_FH":"Prof svcs allg immntx x w\/prv allgic xtrcs 1 njx",
         "Reimbursement_offer_Premera":11.4156,
         "Reimbursement_offer_Premera_PMC":94.0329489292,
         "Reimbursement_offer_Regence":12.936,
@@ -47,7 +47,7 @@
     {
         "CPT_Code":"95117",
         "Descrip":"95117",
-        "Description_FH":"PROF SVCS ALLG IMMNTX X W\/PRV ALLGIC XTRCS NJXS",
+        "Description_FH":"Prof svcs allg immntx x w\/prv allgic xtrcs njxs",
         "Reimbursement_offer_Premera":13.8618,
         "Reimbursement_offer_Premera_PMC":97.7559943583,
         "Reimbursement_offer_Regence":15.708,
@@ -62,7 +62,7 @@
     {
         "CPT_Code":"95165",
         "Descrip":"Immunotherapy (95165)",
-        "Description_FH":"PREPJ& ALLERGEN IMMUNOTHERAPY 1\/MLT ANTIGEN",
+        "Description_FH":"Prepj& allergen immunotherapy 1\/mlt antigen",
         "Reimbursement_offer_Premera":18.7542,
         "Reimbursement_offer_Premera_PMC":104.596765198,
         "Reimbursement_offer_Regence":21.252,
@@ -77,7 +77,7 @@
     {
         "CPT_Code":"92552",
         "Descrip":"Pure Tone Audometry (92552)",
-        "Description_FH":"PURE TONE AUDIOMETRY AIR ONLY",
+        "Description_FH":"Pure tone audiometry air only",
         "Reimbursement_offer_Premera":40.3623,
         "Reimbursement_offer_Premera_PMC":93.388014808,
         "Reimbursement_offer_Regence":34.155,
@@ -92,7 +92,7 @@
     {
         "CPT_Code":"92557",
         "Descrip":"Diagnostic Hearing Test (92557)",
-        "Description_FH":"COMPRE AUDIOMETRY THRESHOLD EVAL SP RECOGNIJ",
+        "Description_FH":"Compre audiometry threshold eval sp recognij",
         "Reimbursement_offer_Premera":45.2547,
         "Reimbursement_offer_Premera_PMC":109.5490196078,
         "Reimbursement_offer_Regence":38.295,
@@ -107,7 +107,7 @@
     {
         "CPT_Code":"92558",
         "Descrip":"Under Audiologic Function Test (92558)",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":0.0,
         "Reimbursement_offer_Premera_PMC":null,
         "Reimbursement_offer_Regence":9.66,
@@ -122,7 +122,7 @@
     {
         "CPT_Code":"95992",
         "Descrip":"CRM (95992)",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":52.1856,
         "Reimbursement_offer_Premera_PMC":108.810675563,
         "Reimbursement_offer_Regence":44.16,
@@ -137,7 +137,7 @@
     {
         "CPT_Code":"97112",
         "Descrip":"Neuro Re Ed (97112)",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":41.1777,
         "Reimbursement_offer_Premera_PMC":107.429428646,
         "Reimbursement_offer_Regence":34.845,
@@ -152,7 +152,7 @@
     {
         "CPT_Code":"97110",
         "Descrip":"Therapeutic Exercises (97110)",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":35.4699,
         "Reimbursement_offer_Premera_PMC":106.5162162162,
         "Reimbursement_offer_Regence":30.015,
@@ -167,7 +167,7 @@
     {
         "CPT_Code":"97530",
         "Descrip":"Other Therapeutic Activity (97530)",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":44.847,
         "Reimbursement_offer_Premera_PMC":104.8807296539,
         "Reimbursement_offer_Regence":37.95,
@@ -182,7 +182,7 @@
     {
         "CPT_Code":"99203",
         "Descrip":"99203",
-        "Description_FH":"OFFICE\/OUTPATIENT NEW LOW MDM 30-44 MINUTES",
+        "Description_FH":"Office\/outpatient new low mdm 30-44 minutes",
         "Reimbursement_offer_Premera":127.76715,
         "Reimbursement_offer_Premera_PMC":102.3447212432,
         "Reimbursement_offer_Regence":150.682,
@@ -197,7 +197,7 @@
     {
         "CPT_Code":"99204",
         "Descrip":"99204",
-        "Description_FH":"OFFICE\/OUTPATIENT NEW MODERATE MDM 45-59 MINUTES",
+        "Description_FH":"Office\/outpatient new moderate mdm 45-59 minutes",
         "Reimbursement_offer_Premera":190.2915,
         "Reimbursement_offer_Premera_PMC":103.3070032573,
         "Reimbursement_offer_Regence":224.42,
@@ -212,7 +212,7 @@
     {
         "CPT_Code":"99205",
         "Descrip":"99205",
-        "Description_FH":"OFFICE\/OUTPATIENT NEW HIGH MDM 60-74 MINUTES",
+        "Description_FH":"Office\/outpatient new high mdm 60-74 minutes",
         "Reimbursement_offer_Premera":251.6508,
         "Reimbursement_offer_Premera_PMC":103.7136498516,
         "Reimbursement_offer_Regence":296.784,
@@ -227,7 +227,7 @@
     {
         "CPT_Code":"99213",
         "Descrip":"99213",
-        "Description_FH":"OFFICE\/OUTPATIENT ESTABLISHED LOW MDM 20-29 MIN",
+        "Description_FH":"Office\/outpatient established low mdm 20-29 min",
         "Reimbursement_offer_Premera":103.3011,
         "Reimbursement_offer_Premera_PMC":102.3898305085,
         "Reimbursement_offer_Regence":121.828,
@@ -242,7 +242,7 @@
     {
         "CPT_Code":"99214",
         "Descrip":"99214",
-        "Description_FH":"OFFICE\/OUTPATIENT ESTABLISHED MOD MDM 30-39 MIN",
+        "Description_FH":"Office\/outpatient established mod mdm 30-39 min",
         "Reimbursement_offer_Premera":145.63125,
         "Reimbursement_offer_Premera_PMC":102.391373128,
         "Reimbursement_offer_Regence":171.75,
@@ -257,7 +257,7 @@
     {
         "CPT_Code":"99215",
         "Descrip":"99215",
-        "Description_FH":"OFFICE\/OUTPATIENT ESTABLISHED HIGH MDM 40-54 MIN",
+        "Description_FH":"Office\/outpatient established high mdm 40-54 min",
         "Reimbursement_offer_Premera":205.43715,
         "Reimbursement_offer_Premera_PMC":103.4478825721,
         "Reimbursement_offer_Regence":242.282,
@@ -272,7 +272,7 @@
     {
         "CPT_Code":"99242",
         "Descrip":"99242",
-        "Description_FH":"OFFICE\/OP CONSLTJ NEW\/EST PT SF MDM 20 MINUTES",
+        "Description_FH":"Office\/op consltj new\/est pt sf mdm 20 minutes",
         "Reimbursement_offer_Premera":99.02925,
         "Reimbursement_offer_Premera_PMC":null,
         "Reimbursement_offer_Regence":116.79,
@@ -287,7 +287,7 @@
     {
         "CPT_Code":"99243",
         "Descrip":"99243",
-        "Description_FH":"OFFICE\/OP CONSLTJ NEW\/EST PT LOW MDM 30 MINUTES",
+        "Description_FH":"Office\/op consltj new\/est pt low mdm 30 minutes",
         "Reimbursement_offer_Premera":136.31085,
         "Reimbursement_offer_Premera_PMC":null,
         "Reimbursement_offer_Regence":160.758,
@@ -302,7 +302,7 @@
     {
         "CPT_Code":"99244",
         "Descrip":"99244",
-        "Description_FH":"OFFICE\/OP CONSLTJ NEW\/EST PT MOD MDM 40 MINUTES",
+        "Description_FH":"Office\/op consltj new\/est pt mod mdm 40 minutes",
         "Reimbursement_offer_Premera":203.10705,
         "Reimbursement_offer_Premera_PMC":null,
         "Reimbursement_offer_Regence":239.534,
@@ -317,7 +317,7 @@
     {
         "CPT_Code":"99245",
         "Descrip":"99245",
-        "Description_FH":"OFFICE\/OP CONSLTJ NEW\/EST PT HIGH MDM 55 MINUTES",
+        "Description_FH":"Office\/op consltj new\/est pt high mdm 55 minutes",
         "Reimbursement_offer_Premera":247.7673,
         "Reimbursement_offer_Premera_PMC":null,
         "Reimbursement_offer_Regence":292.204,
@@ -332,7 +332,7 @@
     {
         "CPT_Code":"99252",
         "Descrip":"99252",
-        "Description_FH":"IP\/OBS CONSLTJ NEW\/EST PT SF MDM 35 MINUTES",
+        "Description_FH":"Ip\/obs consltj new\/est pt sf mdm 35 minutes",
         "Reimbursement_offer_Premera":82.71855,
         "Reimbursement_offer_Premera_PMC":null,
         "Reimbursement_offer_Regence":97.554,
@@ -347,7 +347,7 @@
     {
         "CPT_Code":"99253",
         "Descrip":"99253",
-        "Description_FH":"IP\/OBS CONSLTJ NEW\/EST PT LOW MDM 45 MINUTES",
+        "Description_FH":"Ip\/obs consltj new\/est pt low mdm 45 minutes",
         "Reimbursement_offer_Premera":128.54385,
         "Reimbursement_offer_Premera_PMC":null,
         "Reimbursement_offer_Regence":151.598,
@@ -362,7 +362,7 @@
     {
         "CPT_Code":"99254",
         "Descrip":"99254",
-        "Description_FH":"IP\/OBS CONSLTJ NEW\/EST PT MOD MDM 60 MINUTES",
+        "Description_FH":"Ip\/obs consltj new\/est pt mod mdm 60 minutes",
         "Reimbursement_offer_Premera":185.24295,
         "Reimbursement_offer_Premera_PMC":null,
         "Reimbursement_offer_Regence":218.466,
@@ -377,7 +377,7 @@
     {
         "CPT_Code":"99255",
         "Descrip":"99255",
-        "Description_FH":"IP\/OBS CONSLTJ NEW\/EST PT HIGH MDM 80 MINUTES",
+        "Description_FH":"Ip\/obs consltj new\/est pt high mdm 80 minutes",
         "Reimbursement_offer_Premera":224.07795,
         "Reimbursement_offer_Premera_PMC":null,
         "Reimbursement_offer_Regence":264.266,
@@ -392,7 +392,7 @@
     {
         "CPT_Code":"G2212",
         "Descrip":"G2212",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":37.2816,
         "Reimbursement_offer_Premera_PMC":106.9773314204,
         "Reimbursement_offer_Regence":43.968,
@@ -407,7 +407,7 @@
     {
         "CPT_Code":"31579",
         "Descrip":"Strobe (31579)",
-        "Description_FH":"LARYNGOSCOPY FLX\/RGD TELESCOPIC W\/STROBOSCOPY",
+        "Description_FH":"Laryngoscopy flx\/rgd telescopic w\/stroboscopy",
         "Reimbursement_offer_Premera":240.9507,
         "Reimbursement_offer_Premera_PMC":104.6883472367,
         "Reimbursement_offer_Regence":273.042,
@@ -422,7 +422,7 @@
     {
         "CPT_Code":"96372",
         "Descrip":"Injections (96372, JX reimbursed @ cost)",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":17.1234,
         "Reimbursement_offer_Premera_PMC":106.4888059701,
         "Reimbursement_offer_Regence":19.404,
@@ -437,7 +437,7 @@
     {
         "CPT_Code":"30901",
         "Descrip":"30901",
-        "Description_FH":"CONTROL NASAL HEMORRHAGE ANTERIOR SIMPLE",
+        "Description_FH":"Control nasal hemorrhage anterior simple",
         "Reimbursement_offer_Premera":194.0652,
         "Reimbursement_offer_Premera_PMC":104.6173584906,
         "Reimbursement_offer_Regence":219.912,
@@ -452,7 +452,7 @@
     {
         "CPT_Code":"30903",
         "Descrip":"30903",
-        "Description_FH":"CONTROL NASAL HEMORRHAGE ANTERIOR COMPLEX",
+        "Description_FH":"Control nasal hemorrhage anterior complex",
         "Reimbursement_offer_Premera":303.7365,
         "Reimbursement_offer_Premera_PMC":103.9872984354,
         "Reimbursement_offer_Regence":344.19,
@@ -467,7 +467,7 @@
     {
         "CPT_Code":"30905",
         "Descrip":"30905",
-        "Description_FH":"CTRL NSL HEMRRG PST NASAL PACKS&\/CAUTERY 1ST",
+        "Description_FH":"Ctrl nsl hemrrg pst nasal packs&\/cautery 1st",
         "Reimbursement_offer_Premera":434.6082,
         "Reimbursement_offer_Premera_PMC":103.643478883,
         "Reimbursement_offer_Regence":492.492,
@@ -482,7 +482,7 @@
     {
         "CPT_Code":"30906",
         "Descrip":"30906",
-        "Description_FH":"CTRL NSL HEMRRG PST NASAL PACKS&\/CAUTERY SUBSQ",
+        "Description_FH":"Ctrl nsl hemrrg pst nasal packs&\/cautery subsq",
         "Reimbursement_offer_Premera":456.2163,
         "Reimbursement_offer_Premera_PMC":103.1276956463,
         "Reimbursement_offer_Regence":516.978,
@@ -497,7 +497,7 @@
     {
         "CPT_Code":"31238",
         "Descrip":31238,
-        "Description_FH":"NASAL\/SINUS NDSC SURG W\/CONTROL NASAL HEMRRG",
+        "Description_FH":"Nasal\/sinus ndsc surg w\/control nasal hemrrg",
         "Reimbursement_offer_Premera":303.7365,
         "Reimbursement_offer_Premera_PMC":105.7063061182,
         "Reimbursement_offer_Regence":344.19,
@@ -512,7 +512,7 @@
     {
         "CPT_Code":"31231",
         "Descrip":"Nasal Endoscopies",
-        "Description_FH":"NASAL ENDOSCOPY DIAGNOSTIC UNI\/BI SPX",
+        "Description_FH":"Nasal endoscopy diagnostic uni\/bi spx",
         "Reimbursement_offer_Premera":230.7582,
         "Reimbursement_offer_Premera_PMC":102.7327041225,
         "Reimbursement_offer_Regence":261.492,
@@ -527,7 +527,7 @@
     {
         "CPT_Code":"31237",
         "Descrip":"Endoscopic nasal debridement",
-        "Description_FH":"NASAL\/SINUS NDSC SURG W\/BX POLYPECT\/DBRDMT SPX",
+        "Description_FH":"Nasal\/sinus ndsc surg w\/bx polypect\/dbrdmt spx",
         "Reimbursement_offer_Premera":311.0751,
         "Reimbursement_offer_Premera_PMC":105.0751900017,
         "Reimbursement_offer_Regence":352.506,
@@ -542,7 +542,7 @@
     {
         "CPT_Code":"31575",
         "Descrip":"Laryngoscopy",
-        "Description_FH":"LARYNGOSCOPY FLEXIBLE DIAGNOSTIC",
+        "Description_FH":"Laryngoscopy flexible diagnostic",
         "Reimbursement_offer_Premera":156.9645,
         "Reimbursement_offer_Premera_PMC":103.0559385464,
         "Reimbursement_offer_Regence":177.87,
@@ -557,7 +557,7 @@
     {
         "CPT_Code":"92511",
         "Descrip":"Nasopharyngoscopy",
-        "Description_FH":"NASOPHARYNGOSCOPY W\/ENDOSCOPE SPX",
+        "Description_FH":"Nasopharyngoscopy w\/endoscope spx",
         "Reimbursement_offer_Premera":143.9181,
         "Reimbursement_offer_Premera_PMC":102.2218197315,
         "Reimbursement_offer_Regence":163.086,
@@ -572,7 +572,7 @@
     {
         "CPT_Code":"69705",
         "Descrip":"Unilateral Eustachian tube dilation",
-        "Description_FH":"SURG NASOPHARYNGOSCOPY DILAT EUSTACHIAN TUBE UNI",
+        "Description_FH":"Surg nasopharyngoscopy dilat eustachian tube uni",
         "Reimbursement_offer_Premera":3465.8577,
         "Reimbursement_offer_Premera_PMC":102.5823548737,
         "Reimbursement_offer_Regence":3927.462,
@@ -587,7 +587,7 @@
     {
         "CPT_Code":"69706",
         "Descrip":"Bilateral Eustachian tube dilation",
-        "Description_FH":"SURG NASOPHARYNGOSCOPY DILAT EUSTACHIAN TUBE BI",
+        "Description_FH":"Surg nasopharyngoscopy dilat eustachian tube bi",
         "Reimbursement_offer_Premera":3577.5675,
         "Reimbursement_offer_Premera_PMC":102.6962458807,
         "Reimbursement_offer_Regence":4054.05,
@@ -602,7 +602,7 @@
     {
         "CPT_Code":"31295",
         "Descrip":"31295",
-        "Description_FH":"NASAL\/SINUS NDSC SURG W\/DILATION MAXILLARY SINUS",
+        "Description_FH":"Nasal\/sinus ndsc surg w\/dilation maxillary sinus",
         "Reimbursement_offer_Premera":2113.9245,
         "Reimbursement_offer_Premera_PMC":102.7613605429,
         "Reimbursement_offer_Regence":2395.47,
@@ -617,7 +617,7 @@
     {
         "CPT_Code":"31296",
         "Descrip":"31296",
-        "Description_FH":"NASAL\/SINUS NDSC SURG W\/DILATION FRONTAL SINUS",
+        "Description_FH":"Nasal\/sinus ndsc surg w\/dilation frontal sinus",
         "Reimbursement_offer_Premera":2143.6866,
         "Reimbursement_offer_Premera_PMC":102.7944912511,
         "Reimbursement_offer_Regence":2429.196,
@@ -632,7 +632,7 @@
     {
         "CPT_Code":"69210",
         "Descrip":"Ear Wax Removal",
-        "Description_FH":"REMOVAL IMPACTED CERUMEN INSTRUMENTATION UNILAT",
+        "Description_FH":"Removal impacted cerumen instrumentation unilat",
         "Reimbursement_offer_Premera":57.078,
         "Reimbursement_offer_Premera_PMC":106.5882352941,
         "Reimbursement_offer_Regence":64.68,
@@ -647,7 +647,7 @@
     {
         "CPT_Code":"92504",
         "Descrip":"Binocular Microscopy",
-        "Description_FH":"BINOCULAR MICROSCOPY SEPARATE DX PROCEDURE",
+        "Description_FH":"Binocular microscopy separate dx procedure",
         "Reimbursement_offer_Premera":35.0622,
         "Reimbursement_offer_Premera_PMC":101.8361893697,
         "Reimbursement_offer_Regence":39.732,
@@ -662,7 +662,7 @@
     {
         "CPT_Code":"69421",
         "Descrip":"Myringotomy",
-        "Description_FH":"MYRINGOTOMY ASPIR&\/EUSTACHIAN TUBE NFLTJ ANES",
+        "Description_FH":"Myringotomy aspir&\/eustachian tube nfltj anes",
         "Reimbursement_offer_Premera":183.465,
         "Reimbursement_offer_Premera_PMC":105.5124223602,
         "Reimbursement_offer_Regence":207.9,
@@ -677,7 +677,7 @@
     {
         "CPT_Code":"69433",
         "Descrip":"Tympanostomy tube (69433)",
-        "Description_FH":"TYMPANOSTOMY LOCAL\/TOPICAL ANESTHESIA",
+        "Description_FH":"Tympanostomy local\/topical anesthesia",
         "Reimbursement_offer_Premera":246.2508,
         "Reimbursement_offer_Premera_PMC":103.4449905482,
         "Reimbursement_offer_Regence":279.048,
@@ -692,7 +692,7 @@
     {
         "CPT_Code":"69801",
         "Descrip":"Ear injection (69801)",
-        "Description_FH":"LABYRINTHOTOMY TRANSCANAL",
+        "Description_FH":"Labyrinthotomy transcanal",
         "Reimbursement_offer_Premera":278.4591,
         "Reimbursement_offer_Premera_PMC":104.5934342486,
         "Reimbursement_offer_Regence":315.546,
@@ -707,7 +707,7 @@
     {
         "CPT_Code":"95992",
         "Descrip":"Canalith repositoining maneuver",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":52.1856,
         "Reimbursement_offer_Premera_PMC":108.810675563,
         "Reimbursement_offer_Regence":44.16,
@@ -722,7 +722,7 @@
     {
         "CPT_Code":"69220",
         "Descrip":"Mastoid cleaning (69220)",
-        "Description_FH":"DEBRIDEMENT MASTOIDECTOMY CAVITY SIMPLE",
+        "Description_FH":"Debridement mastoidectomy cavity simple",
         "Reimbursement_offer_Premera":93.3633,
         "Reimbursement_offer_Premera_PMC":103.9680400891,
         "Reimbursement_offer_Regence":105.798,
@@ -737,7 +737,7 @@
     {
         "CPT_Code":"69005",
         "Descrip":"Drain auricular hematoma",
-        "Description_FH":"DRAINAGE EXTERNAL EAR ABSCESS\/HEMATOMA CMPLX",
+        "Description_FH":"Drainage external ear abscess\/hematoma cmplx",
         "Reimbursement_offer_Premera":267.8589,
         "Reimbursement_offer_Premera_PMC":105.4230557305,
         "Reimbursement_offer_Regence":303.534,
@@ -752,7 +752,7 @@
     {
         "CPT_Code":"92540",
         "Descrip":"VNG (92540)",
-        "Description_FH":"VSTBLR FUNCJ NYSTAG FOVL&PERPH STIMJ OSCIL TRK",
+        "Description_FH":"Vstblr funcj nystag fovl&perph stimj oscil trk",
         "Reimbursement_offer_Premera":133.3179,
         "Reimbursement_offer_Premera_PMC":108.1072818683,
         "Reimbursement_offer_Regence":151.074,
@@ -767,7 +767,7 @@
     {
         "CPT_Code":"92548",
         "Descrip":"92548",
-        "Description_FH":"CDP-SOT 6 CONDITIONS W\/INTERPRETATION & REPORT",
+        "Description_FH":"Cdp-sot 6 conditions w\/interpretation & report",
         "Reimbursement_offer_Premera":58.7088,
         "Reimbursement_offer_Premera_PMC":109.8181818182,
         "Reimbursement_offer_Regence":66.528,
@@ -782,7 +782,7 @@
     {
         "CPT_Code":"92549",
         "Descrip":"92549",
-        "Description_FH":"CDP-SOT 6 CONDITIONS W\/I&R W\/MCT & ADT",
+        "Description_FH":"Cdp-sot 6 conditions w\/i&r w\/mct & adt",
         "Reimbursement_offer_Premera":76.6476,
         "Reimbursement_offer_Premera_PMC":103.9712425393,
         "Reimbursement_offer_Regence":86.856,
@@ -797,7 +797,7 @@
     {
         "CPT_Code":"92567",
         "Descrip":"Tympanogram (92567)",
-        "Description_FH":"TYMPANOMETRY",
+        "Description_FH":"Tympanometry",
         "Reimbursement_offer_Premera":19.9773,
         "Reimbursement_offer_Premera_PMC":106.432072456,
         "Reimbursement_offer_Regence":22.638,
@@ -812,7 +812,7 @@
     {
         "CPT_Code":"Surgeries",
         "Descrip":"Surgeries (Facility)",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":45.3,
         "Reimbursement_offer_Premera_PMC":0.0,
         "Reimbursement_offer_Regence":46.2,
@@ -827,7 +827,7 @@
     {
         "CPT_Code":"69436",
         "Descrip":"Tubes (69436)",
-        "Description_FH":"TYMPANOSTOMY GENERAL ANESTHESIA",
+        "Description_FH":"Tympanostomy general anesthesia",
         "Reimbursement_offer_Premera":192.4344,
         "Reimbursement_offer_Premera_PMC":106.1414230557,
         "Reimbursement_offer_Regence":218.064,
@@ -842,7 +842,7 @@
     {
         "CPT_Code":"30520",
         "Descrip":"Septoplasty (30520)",
-        "Description_FH":"SEPTOPLASTY\/SUBMUCOUS RESECJ W\/WO CARTILAGE GRF",
+        "Description_FH":"Septoplasty\/submucous resecj w\/wo cartilage grf",
         "Reimbursement_offer_Premera":828.0387,
         "Reimbursement_offer_Premera_PMC":105.6630043641,
         "Reimbursement_offer_Regence":938.322,
@@ -857,7 +857,7 @@
     {
         "CPT_Code":"30465",
         "Descrip":"Nasal valve repair (30465)",
-        "Description_FH":"REPAIR NASAL VESTIBULAR STENOSIS",
+        "Description_FH":"Repair nasal vestibular stenosis",
         "Reimbursement_offer_Premera":1260.2007,
         "Reimbursement_offer_Premera_PMC":106.9743557095,
         "Reimbursement_offer_Regence":1428.042,
@@ -872,7 +872,7 @@
     {
         "CPT_Code":"30130",
         "Descrip":"30130",
-        "Description_FH":"EXCISION INFERIOR TURBINATE PARTIAL\/COMPLETE",
+        "Description_FH":"Excision inferior turbinate partial\/complete",
         "Reimbursement_offer_Premera":514.1097,
         "Reimbursement_offer_Premera_PMC":104.5023375884,
         "Reimbursement_offer_Regence":582.582,
@@ -887,7 +887,7 @@
     {
         "CPT_Code":"30140",
         "Descrip":"30140",
-        "Description_FH":"SUBMUCOUS RESCJ INFERIOR TURBINATE PRTL\/COMPL",
+        "Description_FH":"Submucous rescj inferior turbinate prtl\/compl",
         "Reimbursement_offer_Premera":362.0376,
         "Reimbursement_offer_Premera_PMC":185.8413839125,
         "Reimbursement_offer_Regence":410.256,
@@ -902,7 +902,7 @@
     {
         "CPT_Code":"42820",
         "Descrip":"42820",
-        "Description_FH":"TONSILLECTOMY & ADENOIDECTOMY <AGE 12",
+        "Description_FH":"Tonsillectomy & adenoidectomy <age 12",
         "Reimbursement_offer_Premera":351.0297,
         "Reimbursement_offer_Premera_PMC":107.5326859453,
         "Reimbursement_offer_Regence":397.782,
@@ -917,7 +917,7 @@
     {
         "CPT_Code":"42821",
         "Descrip":"42821",
-        "Description_FH":"TONSILLECTOMY & ADENOIDECTOMY AGE 12\/>",
+        "Description_FH":"Tonsillectomy & adenoidectomy age 12\/>",
         "Reimbursement_offer_Premera":366.5223,
         "Reimbursement_offer_Premera_PMC":107.1201484686,
         "Reimbursement_offer_Regence":415.338,
@@ -932,7 +932,7 @@
     {
         "CPT_Code":"42825",
         "Descrip":"42825",
-        "Description_FH":"TONSILLECTOMY PRIMARY\/SECONDARY <AGE 12",
+        "Description_FH":"Tonsillectomy primary\/secondary <age 12",
         "Reimbursement_offer_Premera":323.7138,
         "Reimbursement_offer_Premera_PMC":106.2471445451,
         "Reimbursement_offer_Regence":366.828,
@@ -947,7 +947,7 @@
     {
         "CPT_Code":"42826",
         "Descrip":"42826",
-        "Description_FH":"TONSILLECTOMY PRIMARY\/SECONDARY AGE 12\/>",
+        "Description_FH":"Tonsillectomy primary\/secondary age 12\/>",
         "Reimbursement_offer_Premera":308.2212,
         "Reimbursement_offer_Premera_PMC":106.6251081053,
         "Reimbursement_offer_Regence":349.272,
@@ -962,7 +962,7 @@
     {
         "CPT_Code":"42830",
         "Descrip":"42830",
-        "Description_FH":"ADENOIDECTOMY PRIMARY <AGE 12",
+        "Description_FH":"Adenoidectomy primary <age 12",
         "Reimbursement_offer_Premera":256.0356,
         "Reimbursement_offer_Premera_PMC":105.900483931,
         "Reimbursement_offer_Regence":290.136,
@@ -977,7 +977,7 @@
     {
         "CPT_Code":"31240",
         "Descrip":"31240",
-        "Description_FH":"NASAL\/SINUS NDSC SURG W\/CONCHA BULLOSA RESECTION",
+        "Description_FH":"Nasal\/sinus ndsc surg w\/concha bullosa resection",
         "Reimbursement_offer_Premera":189.5805,
         "Reimbursement_offer_Premera_PMC":109.1487707985,
         "Reimbursement_offer_Regence":214.83,
@@ -992,7 +992,7 @@
     {
         "CPT_Code":"31253",
         "Descrip":"31253",
-        "Description_FH":"NASAL\/SINUS NDSC TOT W\/FRNT SINS EXPL TISS RMVL",
+        "Description_FH":"Nasal\/sinus ndsc tot w\/frnt sins expl tiss rmvl",
         "Reimbursement_offer_Premera":599.7267,
         "Reimbursement_offer_Premera_PMC":111.0666703706,
         "Reimbursement_offer_Regence":679.602,
@@ -1007,7 +1007,7 @@
     {
         "CPT_Code":"31254",
         "Descrip":"31254",
-        "Description_FH":"NASAL\/SINUS NDSC W\/PARTIAL ETHMOIDECTOMY",
+        "Description_FH":"Nasal\/sinus ndsc w\/partial ethmoidectomy",
         "Reimbursement_offer_Premera":537.3486,
         "Reimbursement_offer_Premera_PMC":203.8732025648,
         "Reimbursement_offer_Regence":608.916,
@@ -1022,7 +1022,7 @@
     {
         "CPT_Code":"31255",
         "Descrip":"31255",
-        "Description_FH":"NASAL\/SINUS NDSC W\/TOTAL ETHOIDECTOMY",
+        "Description_FH":"Nasal\/sinus ndsc w\/total ethoidectomy",
         "Reimbursement_offer_Premera":388.5381,
         "Reimbursement_offer_Premera_PMC":111.0584822067,
         "Reimbursement_offer_Regence":440.286,
@@ -1037,7 +1037,7 @@
     {
         "CPT_Code":"31256",
         "Descrip":"31256",
-        "Description_FH":"NASAL\/SINUS ENDOSCOPY W\/MAXILLARY ANTROSTOMY",
+        "Description_FH":"Nasal\/sinus endoscopy w\/maxillary antrostomy",
         "Reimbursement_offer_Premera":214.8579,
         "Reimbursement_offer_Premera_PMC":109.8006439084,
         "Reimbursement_offer_Regence":243.474,
@@ -1052,7 +1052,7 @@
     {
         "CPT_Code":"31257",
         "Descrip":"31257",
-        "Description_FH":"NASAL\/SINUS NDSC TOTAL WITH SPHENOIDOTOMY",
+        "Description_FH":"Nasal\/sinus ndsc total with sphenoidotomy",
         "Reimbursement_offer_Premera":533.6793,
         "Reimbursement_offer_Premera_PMC":110.862149193,
         "Reimbursement_offer_Regence":604.758,
@@ -1067,7 +1067,7 @@
     {
         "CPT_Code":"31259",
         "Descrip":"31259",
-        "Description_FH":"NASAL\/SINUS NDSC TOT W\/SPHENDT W\/SPHEN TISS RMVL",
+        "Description_FH":"Nasal\/sinus ndsc tot w\/sphendt w\/sphen tiss rmvl",
         "Reimbursement_offer_Premera":565.0722,
         "Reimbursement_offer_Premera_PMC":110.9660075015,
         "Reimbursement_offer_Regence":640.332,
@@ -1082,7 +1082,7 @@
     {
         "CPT_Code":"31267",
         "Descrip":"31267",
-        "Description_FH":"NSL\/SINUS NDSC MAX ANTROST W\/RMVL TISS MAX SINUS",
+        "Description_FH":"Nsl\/sinus ndsc max antrost w\/rmvl tiss max sinus",
         "Reimbursement_offer_Premera":317.5983,
         "Reimbursement_offer_Premera_PMC":110.5458753916,
         "Reimbursement_offer_Regence":359.898,
@@ -1097,7 +1097,7 @@
     {
         "CPT_Code":"31276",
         "Descrip":"31276",
-        "Description_FH":"NASAL\/SINUS NDSC W\/RMVL TISS FROM FRONTAL SINUS",
+        "Description_FH":"Nasal\/sinus ndsc w\/rmvl tiss from frontal sinus",
         "Reimbursement_offer_Premera":452.547,
         "Reimbursement_offer_Premera_PMC":110.8776185226,
         "Reimbursement_offer_Regence":512.82,
@@ -1112,7 +1112,7 @@
     {
         "CPT_Code":"61782",
         "Descrip":"Stereotactic Assisted Navigation (61782)",
-        "Description_FH":"STRTCTC CPTR ASSTD PX EXTRADURAL CRANIAL",
+        "Description_FH":"Strtctc cptr asstd px extradural cranial",
         "Reimbursement_offer_Premera":207.1116,
         "Reimbursement_offer_Premera_PMC":111.338350715,
         "Reimbursement_offer_Regence":234.696,
@@ -1127,7 +1127,7 @@
     {
         "CPT_Code":"69930",
         "Descrip":"69930",
-        "Description_FH":"COCHLEAR DEVICE IMPLANTATION W\/WO MASTOIDECTOMY",
+        "Description_FH":"Cochlear device implantation w\/wo mastoidectomy",
         "Reimbursement_offer_Premera":1479.5433,
         "Reimbursement_offer_Premera_PMC":108.5831614792,
         "Reimbursement_offer_Regence":1676.598,
@@ -1142,7 +1142,7 @@
     {
         "CPT_Code":"92601",
         "Descrip":"92601",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":196.5114,
         "Reimbursement_offer_Premera_PMC":146.0182790905,
         "Reimbursement_offer_Regence":222.684,
@@ -1157,7 +1157,7 @@
     {
         "CPT_Code":"92602",
         "Descrip":"92602",
-        "Description_FH":null,
+        "Description_FH":"Nan",
         "Reimbursement_offer_Premera":124.3485,
         "Reimbursement_offer_Premera_PMC":162.9090789991,
         "Reimbursement_offer_Regence":140.91,
@@ -1172,7 +1172,7 @@
     {
         "CPT_Code":"21235",
         "Descrip":"Tragal cartilage graft",
-        "Description_FH":"GRAFT EAR CRTLG AUTOGENOUS NOSE\/EAR",
+        "Description_FH":"Graft ear crtlg autogenous nose\/ear",
         "Reimbursement_offer_Premera":885.9321,
         "Reimbursement_offer_Premera_PMC":138.0946004926,
         "Reimbursement_offer_Regence":1003.926,
@@ -1187,7 +1187,7 @@
     {
         "CPT_Code":"69631",
         "Descrip":"Tympanoplasty",
-        "Description_FH":"TYMPANOPLASTY W\/O MASTOIDECT W\/O OSSICLE RECNSTJ",
+        "Description_FH":"Tympanoplasty w\/o mastoidect w\/o ossicle recnstj",
         "Reimbursement_offer_Premera":1088.9667,
         "Reimbursement_offer_Premera_PMC":106.1546942476,
         "Reimbursement_offer_Regence":1234.002,
@@ -1202,7 +1202,7 @@
     {
         "CPT_Code":"69637",
         "Descrip":"Tympanoplasty OCR",
-        "Description_FH":"TMPP ANTRT\/MASTOIDOTOMY PROSTHESIS TORP",
+        "Description_FH":"Tmpp antrt\/mastoidotomy prosthesis torp",
         "Reimbursement_offer_Premera":1763.3025,
         "Reimbursement_offer_Premera_PMC":108.9029737825,
         "Reimbursement_offer_Regence":1998.15,
@@ -1217,7 +1217,7 @@
     {
         "CPT_Code":"69642",
         "Descrip":"Tympanomastoidectomy OCR",
-        "Description_FH":"TMPP MASTOIDECTOMY W\/OSSICULAR CHAIN RECNSTJ",
+        "Description_FH":"Tmpp mastoidectomy w\/ossicular chain recnstj",
         "Reimbursement_offer_Premera":1636.1001,
         "Reimbursement_offer_Premera_PMC":107.3281837325,
         "Reimbursement_offer_Regence":1854.006,
@@ -1232,7 +1232,7 @@
     {
         "CPT_Code":"70486",
         "Descrip":70486,
-        "Description_FH":"CT MAXILLOFACIAL W\/O CONTRAST MATERIAL",
+        "Description_FH":"Ct maxillofacial w\/o contrast material",
         "Reimbursement_offer_Premera":161.4492,
         "Reimbursement_offer_Premera_PMC":102.6442876216,
         "Reimbursement_offer_Regence":182.952,
@@ -1247,7 +1247,7 @@
     {
         "CPT_Code":"70480",
         "Descrip":70480,
-        "Description_FH":"CT ORBIT SELLA\/POST FOSSA\/EAR W\/O CONTRAST MATRL",
+        "Description_FH":"Ct orbit sella\/post fossa\/ear w\/o contrast matrl",
         "Reimbursement_offer_Premera":200.5884,
         "Reimbursement_offer_Premera_PMC":103.9910830007,
         "Reimbursement_offer_Regence":227.304,
