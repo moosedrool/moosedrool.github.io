@@ -2,7 +2,7 @@
     {
         "CPT_Code":"95004",
         "Descrip":"95004",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":4.8924,
         "Reimbursement_offer_Premera_PMC":103.6525423729,
         "Reimbursement_offer_Regence":5.544,
@@ -107,7 +107,7 @@
     {
         "CPT_Code":"92558",
         "Descrip":"Under Audiologic Function Test (92558)",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":0.0,
         "Reimbursement_offer_Premera_PMC":null,
         "Reimbursement_offer_Regence":9.66,
@@ -122,7 +122,7 @@
     {
         "CPT_Code":"95992",
         "Descrip":"CRM (95992)",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":52.1856,
         "Reimbursement_offer_Premera_PMC":108.810675563,
         "Reimbursement_offer_Regence":44.16,
@@ -137,7 +137,7 @@
     {
         "CPT_Code":"97112",
         "Descrip":"Neuro Re Ed (97112)",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":41.1777,
         "Reimbursement_offer_Premera_PMC":107.429428646,
         "Reimbursement_offer_Regence":34.845,
@@ -152,7 +152,7 @@
     {
         "CPT_Code":"97110",
         "Descrip":"Therapeutic Exercises (97110)",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":35.4699,
         "Reimbursement_offer_Premera_PMC":106.5162162162,
         "Reimbursement_offer_Regence":30.015,
@@ -167,7 +167,7 @@
     {
         "CPT_Code":"97530",
         "Descrip":"Other Therapeutic Activity (97530)",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":44.847,
         "Reimbursement_offer_Premera_PMC":104.8807296539,
         "Reimbursement_offer_Regence":37.95,
@@ -392,7 +392,7 @@
     {
         "CPT_Code":"G2212",
         "Descrip":"G2212",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":37.2816,
         "Reimbursement_offer_Premera_PMC":106.9773314204,
         "Reimbursement_offer_Regence":43.968,
@@ -422,7 +422,7 @@
     {
         "CPT_Code":"96372",
         "Descrip":"Injections (96372, JX reimbursed @ cost)",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":17.1234,
         "Reimbursement_offer_Premera_PMC":106.4888059701,
         "Reimbursement_offer_Regence":19.404,
@@ -707,7 +707,7 @@
     {
         "CPT_Code":"95992",
         "Descrip":"Canalith repositoining maneuver",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":52.1856,
         "Reimbursement_offer_Premera_PMC":108.810675563,
         "Reimbursement_offer_Regence":44.16,
@@ -812,7 +812,7 @@
     {
         "CPT_Code":"Surgeries",
         "Descrip":"Surgeries (Facility)",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":45.3,
         "Reimbursement_offer_Premera_PMC":0.0,
         "Reimbursement_offer_Regence":46.2,
@@ -1142,7 +1142,7 @@
     {
         "CPT_Code":"92601",
         "Descrip":"92601",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":196.5114,
         "Reimbursement_offer_Premera_PMC":146.0182790905,
         "Reimbursement_offer_Regence":222.684,
@@ -1157,7 +1157,7 @@
     {
         "CPT_Code":"92602",
         "Descrip":"92602",
-        "Description_FH":"Nan",
+        "Description_FH":"",
         "Reimbursement_offer_Premera":124.3485,
         "Reimbursement_offer_Premera_PMC":162.9090789991,
         "Reimbursement_offer_Regence":140.91,
