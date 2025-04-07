@@ -178,40 +178,7 @@
     }, 20);
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Get the form element by its ID
-  var form = document.getElementById("250946777687176");
-  if (!form) return; // Exit if form is not found
 
-  form.addEventListener("submit", function(event) {
-    // (Optionally prevent default if you want to intercept submission; remove event.preventDefault() if you want the form to submit normally)
-    // event.preventDefault();
-
-    // Build an object with the required fields.
-    // Adjust the keys based on your form's configuration.
-    var submissionData = {
-      help: document.getElementById("input_6") ? document.getElementById("input_6").value : "",
-      insurance: document.getElementById("input_16") ? document.getElementById("input_16").value : "",
-      otherInsurances: document.getElementById("input_26") ? document.getElementById("input_26").value : "",
-      email: document.getElementById("input_1") ? document.getElementById("input_1").value : "",
-      phone: document.getElementById("input_11") 
-                ? document.getElementById("input_11").value.replace(/\D/g, "") 
-                : "",
-      newsletter: document.getElementById("input_5_0") 
-                    ? document.getElementById("input_5_0").checked 
-                    : false
-    };
-
-    // Post the data to the parent window
-    window.parent.postMessage({
-      type: "jotformSubmission",
-      data: submissionData
-    }, "*");
-
-    // If you prevented the default, and you still wish to submit the form, uncomment the next line:
-    // form.submit();
-  });
-});
 
 
 
@@ -290,6 +257,52 @@ document.addEventListener("DOMContentLoaded", function() {
     /* Additional responsive and designer styles... */
     /* (The rest of the injected CSS from your source code is included here.) */
   </style>
+
+
+
+
+<script>
+function testSubmitFunction() {
+  // Gather the field values
+  var helpValue = document.getElementById("input_6") ? document.getElementById("input_6").value : "";
+  var insuranceValue = document.getElementById("input_16") ? document.getElementById("input_16").value : "";
+  var otherInsurancesValue = document.getElementById("input_26") ? document.getElementById("input_26").value : "";
+  var emailValue = document.getElementById("input_1") ? document.getElementById("input_1").value : "";
+  var phoneValue = document.getElementById("input_11") ? document.getElementById("input_11").value : "";
+  // Sanitize phone number to keep digits only
+  var sanitizedPhone = phoneValue.replace(/\D/g, "");
+  var newsletter = document.getElementById("input_5_0") ? document.getElementById("input_5_0").checked : false;
+
+  // Build the submission data object
+  var submissionData = {
+    help: helpValue,
+    insurance: insuranceValue,
+    otherInsurances: otherInsurancesValue,
+    email: emailValue,
+    phone: sanitizedPhone,
+    newsletter: newsletter
+  };
+
+  // Send the data to the parent window via postMessage
+  window.parent.postMessage({
+    type: "jotformSubmission",
+    data: submissionData
+  }, "*");
+
+  // Return true to allow the form to submit normally
+  return true;
+}
+</script>
+
+
+
+
+
+
+
+
+
+  
 </head>
 <body>
   <form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://hipaa-submit.jotform.com/submit/250946777687176" method="post" name="form_250946777687176" id="250946777687176" accept-charset="utf-8" autocomplete="on">
