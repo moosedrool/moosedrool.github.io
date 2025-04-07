@@ -176,6 +176,46 @@
         {"name":"ltpgtweamprsquollSchedule29","qid":"29","text":"Your insurance doesn't fully cover the cost of your visit. Upload your card, and we’ll:\r\n\r\nSend you the discounted cost for your visit\r\nFile a claim with your insurance company to get the visit counted toward your deductible\r\n","type":"control_text"}
       ]);
     }, 20);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Get the form element by its ID
+  var form = document.getElementById("250946777687176");
+  if (!form) return; // Exit if form is not found
+
+  form.addEventListener("submit", function(event) {
+    // (Optionally prevent default if you want to intercept submission; remove event.preventDefault() if you want the form to submit normally)
+    // event.preventDefault();
+
+    // Build an object with the required fields.
+    // Adjust the keys based on your form's configuration.
+    var submissionData = {
+      help: document.getElementById("input_6") ? document.getElementById("input_6").value : "",
+      insurance: document.getElementById("input_16") ? document.getElementById("input_16").value : "",
+      otherInsurances: document.getElementById("input_26") ? document.getElementById("input_26").value : "",
+      email: document.getElementById("input_1") ? document.getElementById("input_1").value : "",
+      phone: document.getElementById("input_11") 
+                ? document.getElementById("input_11").value.replace(/\D/g, "") 
+                : "",
+      newsletter: document.getElementById("input_5_0") 
+                    ? document.getElementById("input_5_0").checked 
+                    : false
+    };
+
+    // Post the data to the parent window
+    window.parent.postMessage({
+      type: "jotformSubmission",
+      data: submissionData
+    }, "*");
+
+    // If you prevented the default, and you still wish to submit the form, uncomment the next line:
+    // form.submit();
+  });
+});
+
+
+
+    
   </script>
   
   <!-- JotForm CSS -->
