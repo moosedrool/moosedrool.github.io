@@ -1485,7 +1485,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
         formElement.addEventListener("submit", function(event) {
           // Delay slightly to let Jotform process the submission.
           setTimeout(function(){
-            var emailField = document.getElementById("input_3");
+            var emailField = document.getElementById("input_1");
             var emailValue = emailField ? emailField.value : "";
             // Send the email value to the parent window.
             window.parent.postMessage({ type: "jotformSubmission", data: { email: emailValue } }, "*");
