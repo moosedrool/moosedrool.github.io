@@ -1479,21 +1479,59 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
 
     // Attach a listener once the DOM is ready.
 
-    document.addEventListener("DOMContentLoaded", function() {
-      var formElement = document.getElementById("251305644776158");
-      if (formElement) {
-        formElement.addEventListener("submit", function(event) {
-          // Delay slightly to let Jotform process the submission.
-          setTimeout(function(){
-            var emailField = document.getElementById("input_1");
-            var emailValue = emailField ? emailField.value : "";
-            // Send the email value to the parent window.
-            window.parent.postMessage({ type: "jotformSubmission", data: { email: emailValue } }, "*");
-          }, 500);
-        });
-      }
-    });
+    // document.addEventListener("DOMContentLoaded", function() {
+    //   var formElement = document.getElementById("251305644776158");
+    //   if (formElement) {
+    //     formElement.addEventListener("submit", function(event) {
+    //       // Delay slightly to let Jotform process the submission.
+    //       setTimeout(function(){
+    //         var emailField = document.getElementById("input_1");
+    //         var emailValue = emailField ? emailField.value : "";
+    //         // Send the email value to the parent window.
+    //         window.parent.postMessage({ type: "jotformSubmission", data: { email: emailValue } }, "*");
+    //       }, 500);
+    //     });
+    //   }
+    // });
 
+    function testSubmitFunction() {
+      // Gather field values from the form
+      var help = document.getElementById("input_6") ? document.getElementById("input_6").value : "";
+      var condition = document.getElementById("input_48") ? document.getElementById("input_48").value : "";
+      var urgency = document.getElementById("input_58") ? document.getElementById("input_58").value : "";
+      var extra_services = document.getElementById("input_57") ? document.getElementById("input_16").value : "";
+
+      var insurance = document.getElementById("input_16") ? document.getElementById("input_16").value : "";
+      var otherInsurances = document.getElementById("input_26") ? document.getElementById("input_26").value : "";
+      var email = document.getElementById("input_1") ? document.getElementById("input_1").value : "";
+      var phone = document.getElementById("input_11") 
+                  ? document.getElementById("input_11").value.replace(/\D/g, "")
+                  : "";
+      var newsletter = document.getElementById("input_5_0") ? document.getElementById("input_5_0").checked : false;
+
+      // Build the data object
+      var submissionData = {
+        help: help,
+	condition: condition,
+	urgency: urgency,
+	extra_services: extra_services,
+        insurance: insurance,
+        otherInsurances: otherInsurances,
+        email: email,
+        phone: phone,
+        newsletter: newsletter
+      };
+
+      // Send the data to the parent window
+      window.parent.postMessage({
+        type: "jotformSubmission",
+        data: submissionData
+      }, "*");
+
+      // Return true to allow normal form submission (or false if you want to block it)
+      return true;
+    }
+	
 
 </script>
 
