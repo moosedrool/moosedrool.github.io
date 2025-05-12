@@ -1484,7 +1484,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
     //       }, 500);
     //     });
     //   }
-    // });
+    // }); 
 
     function testSubmitFunction() {
       // Gather field values from the form
@@ -1499,6 +1499,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
       var phone = document.getElementById("input_11") 
                   ? document.getElementById("input_11").value.replace(/\D/g, "")
                   : "";
+      var unsecure_text_ok = document.getElementById("input_84") ? document.getElementById("input_84").value : "";
       var newsletter = document.getElementById("input_5_0") ? document.getElementById("input_5_0").checked : false;
 
       // Build the data object
@@ -1507,6 +1508,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
 	condition: condition,
 	urgency: urgency,
 	extra_services: extra_services,
+	unsecure_text_ok: unsecure_text_ok,
         insurance: insurance,
         otherInsurances: otherInsurances,
         email: email,
