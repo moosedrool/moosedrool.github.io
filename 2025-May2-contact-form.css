@@ -1,28 +1,3 @@
-<style type="text/css">
-
-
-    .form-label-left{
-        width:400px;
-    }
-    .form-line{
-        padding-top:10px;
-        padding-bottom:10px;
-    }
-    .form-label-right{
-        width:400px;
-    }
-    .form-all{
-        width:300px;
-        color:#267a87 !important;
-        font-family:'Helvetica';
-        font-size:14px;
-    }
-    .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
-        color: false;
-    }
-
-</style>
-
 <style type="text/css" id="form-designer-style">
     /* Injected CSS Code */
 .form-all:after {
@@ -34,9 +9,9 @@
   font-family: "Helvetica", sans-serif;
 }
 .form-all {
-  width: 400px;
+  width: 300px;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 .form-label-left,
 .form-label-right {
@@ -45,7 +20,13 @@
 .form-label {
   white-space: normal;
 }
-
+.form-label.form-label-auto {
+  display: inline-block;
+  float: left;
+  text-align: left;
+  word-break: break-word;
+  width: 400px;
+}
 .form-label-left {
   display: inline-block;
   white-space: normal;
@@ -71,35 +52,8 @@
   font-size: 14px;
 }
 .form-label {
-  position: relative;
-}
-.form-label:after {
-  content: 'This label will not be seen on the form.';
-  background: #FFFFE0;
-  position: absolute;
-  left: 0;
-  top: 110%;
-  width: 90px;
-  opacity: 0;
-  padding: 6px 9px 8px;
-  border-radius: 3px;
-  font-size: 10px;
   font-weight: normal;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-.form-label:hover:after {
-  opacity: 0.8;
-}
-.supernova .form-label:after {
-  display: none;
-}
-.jotform-form .form-line[data-type="control_textbox"] .form-label,
-.jotform-form .form-line[data-type="control_textarea"] .form-label,
-.jotform-form .form-line[data-type="control_fullname"] .form-label,
-.jotform-form .form-line[data-type="control_email"] .form-label,
-.jotform-form .form-line[data-type="control_address"] .form-label,
-.jotform-form .form-line[data-type="control_phone"] .form-label {
-  display: none;
+  font-size: 0.95em;
 }
 .supernova {
   background-color: rgba(255, 255, 255, 0);
@@ -130,7 +84,7 @@
 }
 /* | */
 /* | */
-@media screen and (min-width: 480px) and (max-width: 399px) {
+@media screen and (min-width: 480px) and (max-width: 299px) {
   .jotform-form .form-all {
     width: 100%;
   }
@@ -144,7 +98,7 @@
 }
 /* | */
 /* | */
-@media screen and (max-width: 399px) {
+@media screen and (max-width: 299px) {
   .jotform-form .form-all {
     width: 100%;
   }
@@ -175,6 +129,16 @@
 }
 .form-sub-label {
   color: #319eaf;
+}
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html {
+  color: #319eaf;
+}
+.form-checkbox-item label,
+.form-radio-item label {
+  color: #267a87;
 }
 .form-line.form-line-active {
   -webkit-transition-property: all;
@@ -728,6 +692,28 @@ h2 ~ .form-subHeader {
   width: 100%;
   margin: 0;
 }
+.form-line,
+.form-input,
+.form-input-wide,
+.form-dropdown,
+.form-sub-label-container,
+.form-address-table,
+.form-matrix-table {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+}
+.form-textbox,
+.form-textarea,
+.form-radio-item,
+.form-checkbox-item,
+.form-captcha input,
+.form-spinner input,
+.form-error-message {
+  width: 100%;
+  max-width: none;
+  box-sizing: border-box;
+}
 .form-captcha input,
 .form-spinner input,
 .form-error-message {
@@ -1203,100 +1189,7 @@ li[data-type="control_image"] img {
 }
 /* | */
 
-/*PREFERENCES STYLE*/
-    .form-all {
-      font-family: Helvetica, sans-serif;
-    }
-  
-    
-  
-    .form-line {
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-  
-    .form-all {
-      max-width: 300px;
-      width: 100%;
-    }
-  
-    .form-label.form-label-left,
-    .form-label.form-label-right,
-    .form-label.form-label-left.form-label-auto,
-    .form-label.form-label-right.form-label-auto {
-      width: 400px;
-    }
-  
-    .form-all {
-      font-size: 14px
-    }
-  
-    .supernova .form-all, .form-all {
-      background-color: rgba(255, 255, 255, 0);
-    }
-  
-    .form-all {
-      color: #267a87;
-    }
-    .form-header-group .form-header {
-      color: #267a87;
-    }
-    .form-header-group .form-subHeader {
-      color: #267a87;
-    }
-    .form-label-top,
-    .form-label-left,
-    .form-label-right,
-    .form-html,
-    .form-checkbox-item label,
-    .form-radio-item label,
-    span.FITB .qb-checkbox-label,
-    span.FITB .qb-radiobox-label,
-    span.FITB .form-radio label,
-    span.FITB .form-checkbox label,
-    [data-blotid][data-type=checkbox] [data-labelid],
-    [data-blotid][data-type=radiobox] [data-labelid],
-    span.FITB-inptCont[data-type=checkbox] label,
-    span.FITB-inptCont[data-type=radiobox] label {
-      color: #267a87;
-    }
-    .form-sub-label {
-      color: #4094a1;
-    }
-  
-  .supernova {
-    background-color: #ffffff;
-  }
-  .supernova body {
-    background: transparent;
-  }
-  
-    .form-textbox,
-    .form-textarea,
-    .form-dropdown,
-    .form-radio-other-input,
-    .form-checkbox-other-input,
-    .form-captcha input,
-    .form-spinner input {
-      background-color: #fff;
-    }
-  
-      
-    .supernova {
-      background-repeat: no-repeat;
-      background-size:cover;
-      background-attachment: fixed;
-      background-position: center top;
-    }
-
-      .supernova, #stage {
-        background-image: none;
-      }
-    
-      .form-all {
-        background-image: none;
-      }
-    /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+/*__INSPECT_SEPERATOR__*/
 /*
 Elements: 
 id_6, label_6, cid_6, input_6
@@ -1320,24 +1213,34 @@ label_34 = sec insurance card label FRONT
     box-shadow : none !important;
 }
 
-.form-all, .form-dropdown, #id_75, #text_60 p, #text_54 p, #input_6, #input_16, #input_1, #input_11, #label_33, #label_34, #label_32, #label_31, #label_26, #label_27, #label_28, #input22, #label_19, #label_16, #label_17, #label_6,  ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0,  .form-submit-button, .qq-upload-button {
+.form-error-message {
+    line-height : 1.5 !important;
+    margin-bottom : 2em !important;
+}
+
+.form-all, .form-dropdown, .form-label,.form-html, #label_67, #input_67, #input_45, #label_45, #label_68, #input_1, #label_1, #input_82, #label_82, #id_75, #text_60 p, #text_54 p, #input_6, #input_16, #input_1, #input_11, #label_11, #label_33, #label_34, #label_32, #label_31, #label_26, #label_27, #label_28, #input22, #label_19, #label_16, #label_17, #label_6,  ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0,  .form-submit-button, .qq-upload-button {
     font-family : kyrial-display-pro, sans-serif !important;
     color : #267A87 !important;
     font-size : 1.125rem !important;
     line-height : 1.5 !important;
     font-weight : normal;
     width : 300px !important;
-
 }
 
-#text_54 p, #text_60 p {text-align: left !important;}
- #text_60 p {color: red !important; 
- text-align: left !important;}
+
+
+#text_54 p, #text_60 p {
+    text-align : left !important;
+}
+
+#text_60 p {
+    color : red !important;
+    text-align : left !important;
+}
 
 .form-all {
     border : none !important;
 }
-
 
 .form-error-message {
     padding : 1.25em .5em 1.50em 1.625em !important;
@@ -1402,14 +1305,12 @@ div#cid_6:before, div#cid_16:before {
 }
 
 .qq-upload-button {
-padding-top: 12px !important;
+    padding-top : 12px !important;
 }
-
 
 .form-submit-button,.qq-upload-button {
     background : #267A87 !important;
 }
-
 
 .form-all .form-submit-button:hover, .qq-upload-button:hover {
     color : white !important;
@@ -1426,8 +1327,6 @@ padding-top: 12px !important;
     margin-top : -5px;
     margin-bottom : -5px;
 }
-
-
 
 #text_23 p, #text_22 p, #text_29 p, #text_29 li {
     color : red !important;
@@ -1459,11 +1358,13 @@ select {
 }
 
 .form-label.form-label-auto {
-        
-        display: inline-block;
-        float: left;
-        text-align: left;
-      
-      }
+    display : inline-block;
+    float : left;
+    text-align : left;
+}
+
+
+
+
     /* Injected CSS Code */
 </style>
