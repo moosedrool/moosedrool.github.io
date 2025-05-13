@@ -102,6 +102,89 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
 </script>
 
+<script>
+  window.addEventListener("message", function(event) {
+    // Verify the message origin if desired (update the domain as needed)
+    if (event.origin.indexOf("moosedrool.github.io") === -1) {
+      console.warn("Unexpected origin: " + event.origin);
+      return;
+    }
+    // Check for the expected message type
+    if (event.data && event.data.type === "jotformSubmission") {
+      var data = event.data.data;
+      console.log("Received submission data:", data);
+      console.log("How can we help you:", data.help);
+      console.log("Insurance:", data.insurance);
+      console.log("Other insurances:", data.otherInsurances);
+      console.log("Email:", data.email);
+      console.log("Phone (sanitized):", data.phone);
+      console.log("Newsletter signup:", data.newsletter);
+      // Additional processing can go here
+
+
+      var dataObject = {
+      	$email: emailValue,  // Structure data into JSON object
+      	newsletter: data.newsletter,  // Add newsletter subscription status to JSON object
+      	serviceLine: serviceLine
+      };
+	    
+      mixpanel.identify(emailValue);
+      mixpanel.people.set(dataObject);
+
+
+      var pageTitle = document.title;
+      console.log("The title of the page is: " + pageTitle);
+      var currentDomain = window.location.hostname;
+      console.log("Current domain: " + currentDomain);
+      var currentPath = window.location.pathname;
+      console.log("Current path: " + currentPath);
+      var currentProtocol = window.location.protocol;
+      console.log("Current protocol: " + currentProtocol);
+      var queryString = window.location.search;
+      console.log("Query string: " + queryString);
+
+	    
+      mixpanel.track('Contact', 
+                     {"Channel": "Appointment request",
+                      "Service Line": data.serviceLine, 
+                      "Urgent": data.urgent,
+		      "Extra Services": data.extra_services,
+		      "Insurance Primary": data.insurance,
+		      "Insurance Secondary": data.otherInsurances,
+		      "Unsecure Text Ok": data.unsecure_text_ok,
+                      "Phone Number": data.phone_number,
+                      "$email" : data.email,
+		      "newsletter": data.newsletter,
+                      "current_page_title":   pageTitle,
+                      "current_domain":   currentDomain,
+                      "current_url_path":   currentPath,
+                      "current_url_protocol": currentProtocol,
+                      "current_url_search": queryString       
+                      }, function() {
+        // Callback function to be executed after mixpanel.track has finished processing
+        // console.log("Mixpanel track call completed, now submitting the form.");
+        // event.target.submit();  // Manually trigger the form submission
+        
+	});
+
+    if (newsletterSubscription) {
+    console.log("Checkbox is checked. Doing some stuff...");
+    
+         mixpanel.track('Newsletter Sign Up', {
+            'Service Line': data.serviceLine, 
+            'newsletter': data.newsletter,
+            'Phone Number': data.phone_number,
+            '$email' : data.email,
+           "current_page_title":  pageTitle,
+           "current_domain":    currentDomain,
+           "current_url_path":    currentPath,
+           "current_url_protocol":  currentProtocol,
+           "current_url_search":  queryString  });
+    }
+	    
+    }
+  });
+</script>
   
 <script type="text/javascript">  
 
