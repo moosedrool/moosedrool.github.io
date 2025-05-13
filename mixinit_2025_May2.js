@@ -167,7 +167,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
         
 	});
 
-    if (newsletterSubscription) {
+    if (data.newsletter) {
     console.log("Checkbox is checked. Doing some stuff...");
     
          mixpanel.track('Newsletter Sign Up', {
