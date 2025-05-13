@@ -123,12 +123,12 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
 
       var dataObject = {
-      	$email: emailValue,  // Structure data into JSON object
+      	$email: data.email,  // Structure data into JSON object
       	newsletter: data.newsletter,  // Add newsletter subscription status to JSON object
-      	serviceLine: serviceLine
+      	serviceLine: data.serviceLine
       };
 	    
-      mixpanel.identify(emailValue);
+      mixpanel.identify(data.email);
       mixpanel.people.set(dataObject);
 
 
