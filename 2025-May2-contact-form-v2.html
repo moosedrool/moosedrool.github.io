@@ -1488,8 +1488,15 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
 
     function testSubmitFunction() {
       // Gather field values from the form
+
+
+      // matches 👂🏻   👃🏻   🗣️   (ear+light-tone, nose+light-tone, speaking-head)
+      const emojiRE = /(👂🏻|👃🏻|🗣️)/gu;
       var serviceLine = document.getElementById("input_6") ? document.getElementById("input_6").value : "";
-      const clean = serviceLine.replace(/\p{Extended_Pictographic}/gu, '').trim();
+      const cleanServiceLine  = serviceLine.replace(emojiRE, '').trim();   // text without the emojis
+      const extractedEmojis   = serviceLine.match(emojiRE) || [];          // ["👂🏻"] etc. if you need them
+
+	
 	
       var condition = document.getElementById("input_48") ? document.getElementById("input_48").value : "";
       var urgent = document.getElementById("input_58") ? document.getElementById("input_58").value : "";
