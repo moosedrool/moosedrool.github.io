@@ -1493,7 +1493,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
       // matches 👂🏻   👃🏻   🗣️   (ear+light-tone, nose+light-tone, speaking-head)
       const emojiRE = /(👂🏻|👃🏻|🗣️)/gu;
       var serviceLine = document.getElementById("input_6") ? document.getElementById("input_6").value : "";
-      const serviceLine  = serviceLine.replace(emojiRE, '').trim();   // text without the emojis
+      const serviceLineCleaned  = serviceLine.replace(emojiRE, '').trim();   // text without the emojis
       const extractedEmojis   = serviceLine.match(emojiRE) || [];          // ["👂🏻"] etc. if you need them
 
 	
@@ -1513,7 +1513,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
 
       // Build the data object
       var submissionData = {
-        serviceLine: serviceLine,
+        serviceLine: serviceLineCleaned,
 	condition: condition,
 	urgent: urgent,
 	extra_services: extra_services,
