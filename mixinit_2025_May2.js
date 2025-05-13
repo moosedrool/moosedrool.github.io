@@ -102,7 +102,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 
 </script>
 
-<script>
+<script type="text/javascript">
   window.addEventListener("message", function(event) {
     // Verify the message origin if desired (update the domain as needed)
     if (event.origin.indexOf("moosedrool.github.io") === -1) {
