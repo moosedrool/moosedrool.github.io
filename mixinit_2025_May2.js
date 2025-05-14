@@ -160,7 +160,8 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
                       "current_domain":   currentDomain,
                       "current_url_path":   currentPath,
                       "current_url_protocol": currentProtocol,
-                      "current_url_search": queryString       
+                      "current_url_search": queryString,
+		      "Version": "2025-05-02"
                       }, function() {
         // Callback function to be executed after mixpanel.track has finished processing
         // console.log("Mixpanel track call completed, now submitting the form.");
