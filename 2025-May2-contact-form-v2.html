@@ -1926,25 +1926,34 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
 
   <!-- Post height to iframe via message -->
   <!-- at the bottom of 2025-May2-contact-form-v2.html -->
-<script type="text/javascript">
-	
-	
-	(function(){
-      function sendHeight(){
-        // get total height of content
-        var h = document.documentElement.scrollHeight;
-        // send to parent window; "*" will work if you don't have a stricter origin policy
-        parent.postMessage({ type: 'setHeight', height: h }, '*');
-      }
-      // fire on load and on window resize
-      window.addEventListener('load', sendHeight);
-      window.addEventListener('resize', sendHeight);
+<script type="text/javascript">	
+  (function () {
+    /* Ensure the form never forces horizontal scroll */
+    var css = `
+      html,body{margin:0;padding:0;overflow:hidden}
+      .jotform-form,*{max-width:100%!important;box-sizing:border-box}
+    `;
+    var style = document.createElement('style');
+    style.appendChild(document.createTextNode(css));
+    document.head.appendChild(style);
 
-      // if your form injects elements dynamically, observe changes:
-      new MutationObserver(sendHeight)
-        .observe(document.body, { childList: true, subtree: true });
-    })();
-  </script>
+    /* Send height to parent on load / resize / DOM change */
+    function sendHeight () {
+      var h = document.documentElement.scrollHeight || document.body.scrollHeight;
+      parent.postMessage({ type: 'setHeight', height: h }, '*');
+    }
+
+    window.addEventListener('load',   sendHeight);
+    window.addEventListener('resize', sendHeight);
+    /* catch async field adds (e.g. conditional logic) */
+    new MutationObserver(sendHeight).observe(
+      document.body, { childList:true, subtree:true }
+    );
+    /* safety net */
+    setInterval(sendHeight, 700);
+  })();
+</script>
+
 
 	
 </body>
