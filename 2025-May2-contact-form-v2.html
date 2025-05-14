@@ -1927,32 +1927,34 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
   <!-- Post height to iframe via message -->
   <!-- at the bottom of 2025-May2-contact-form-v2.html -->
 <script type="text/javascript">	
-  (function () {
-    /* Ensure the form never forces horizontal scroll */
-    var css = `
-      html,body{margin:0;padding:0;overflow:hidden}
-      .jotform-form,*{max-width:100%!important;box-sizing:border-box}
-    `;
-    var style = document.createElement('style');
-    style.appendChild(document.createTextNode(css));
-    document.head.appendChild(style);
+(function () {
 
-    /* Send height to parent on load / resize / DOM change */
-    function sendHeight () {
-      var h = document.documentElement.scrollHeight || document.body.scrollHeight;
-      parent.postMessage({ type: 'setHeight', height: h }, '*');
+  /* NEW: keep the form centered and responsive */
+  var css = `
+    html,body{margin:0;padding:0;overflow:hidden}
+    .jotform-form,.form-all{
+      width:100%!important;      /* stretch to viewport */
+      max-width:400px!important; /* never exceed Jotform’s design width */
+      margin:0 auto!important;   /* center horizontally */
+      box-sizing:border-box;
     }
+  `;
+  var style = document.createElement('style');
+  style.appendChild(document.createTextNode(css));
+  document.head.appendChild(style);
 
-    window.addEventListener('load',   sendHeight);
-    window.addEventListener('resize', sendHeight);
-    /* catch async field adds (e.g. conditional logic) */
-    new MutationObserver(sendHeight).observe(
-      document.body, { childList:true, subtree:true }
-    );
-    /* safety net */
-    setInterval(sendHeight, 700);
-  })();
+  /* height-reporting logic (unchanged) */
+  function sendHeight () {
+    var h = document.documentElement.scrollHeight || document.body.scrollHeight;
+    parent.postMessage({ type:'setHeight', height:h }, '*');
+  }
+  window.addEventListener('load', sendHeight);
+  window.addEventListener('resize', sendHeight);
+  new MutationObserver(sendHeight).observe(document.body,{childList:true,subtree:true});
+  setInterval(sendHeight,700);
+})();
 </script>
+
 
 
 	
