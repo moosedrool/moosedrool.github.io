@@ -8,26 +8,26 @@
   <!-- Jotform CSS files -->
 <link rel="stylesheet" href="https://use.typekit.net/tvp8kst.css">
 
-<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.62800" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.62892" rel="stylesheet" type="text/css" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=421d4e0
 "/>
-<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.62800" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.62892" />
 <style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
-<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.62800" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/payment/payment_feature.css?3.3.62892" />
 <style type="text/css">
     .form-label-left{
-        width:400px;
+        width:300px;
     }
     .form-line{
         padding-top:10px;
         padding-bottom:10px;
     }
     .form-label-right{
-        width:400px;
+        width:300px;
     }
     .form-all{
         width:300px;
-        color:rgb(38, 122, 135) !important;
+        color:#267a87 !important;
         font-family:'Helvetica';
         font-size:14px;
     }
@@ -54,7 +54,7 @@
 }
 .form-label-left,
 .form-label-right {
-  width: 400px;
+  width: 300px;
 }
 .form-label {
   white-space: normal;
@@ -64,7 +64,7 @@
   float: left;
   text-align: left;
   word-break: break-word;
-  width: 400px;
+  width: 300px;
 }
 .form-label-left {
   display: inline-block;
@@ -91,8 +91,35 @@
   font-size: 14px;
 }
 .form-label {
+  position: relative;
+}
+.form-label:after {
+  content: 'This label will not be seen on the form.';
+  background: #FFFFE0;
+  position: absolute;
+  left: 0;
+  top: 110%;
+  width: 90px;
+  opacity: 0;
+  padding: 6px 9px 8px;
+  border-radius: 3px;
+  font-size: 10px;
   font-weight: normal;
-  font-size: 0.95em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.form-label:hover:after {
+  opacity: 0.8;
+}
+.supernova .form-label:after {
+  display: none;
+}
+.jotform-form .form-line[data-type="control_textbox"] .form-label,
+.jotform-form .form-line[data-type="control_textarea"] .form-label,
+.jotform-form .form-line[data-type="control_fullname"] .form-label,
+.jotform-form .form-line[data-type="control_email"] .form-label,
+.jotform-form .form-line[data-type="control_address"] .form-label,
+.jotform-form .form-line[data-type="control_phone"] .form-label {
+  display: none;
 }
 .supernova {
   background-color: rgba(255, 255, 255, 0);
@@ -168,16 +195,6 @@
 }
 .form-sub-label {
   color: #319eaf;
-}
-.form-label-top,
-.form-label-left,
-.form-label-right,
-.form-html {
-  color: #319eaf;
-}
-.form-checkbox-item label,
-.form-radio-item label {
-  color: #267a87;
 }
 .form-line.form-line-active {
   -webkit-transition-property: all;
@@ -592,24 +609,24 @@ h2 ~ .form-subHeader {
 }
 .form-captcha input,
 .form-spinner input {
-  width: 400px;
+  width: 300px;
 }
 .form-textbox,
 .form-textarea {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   box-sizing: border-box;
 }
 .form-input,
 .form-address-table,
 .form-matrix-table {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 .form-radio-item,
 .form-checkbox-item {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   box-sizing: border-box;
 }
 .form-textbox.form-radio-other-input,
@@ -663,7 +680,7 @@ h2 ~ .form-subHeader {
 }
 [data-type="control_dropdown"] .form-dropdown {
   width: 100% !important;
-  max-width: 400px;
+  max-width: 300px;
 }
 [data-type="control_fullname"] .form-sub-label-container {
   box-sizing: border-box;
@@ -731,28 +748,6 @@ h2 ~ .form-subHeader {
   width: 100%;
   margin: 0;
 }
-.form-line,
-.form-input,
-.form-input-wide,
-.form-dropdown,
-.form-sub-label-container,
-.form-address-table,
-.form-matrix-table {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: none;
-}
-.form-textbox,
-.form-textarea,
-.form-radio-item,
-.form-checkbox-item,
-.form-captcha input,
-.form-spinner input,
-.form-error-message {
-  width: 100%;
-  max-width: none;
-  box-sizing: border-box;
-}
 .form-captcha input,
 .form-spinner input,
 .form-error-message {
@@ -791,7 +786,7 @@ h2 ~ .form-subHeader {
 .form-textbox,
 .form-textarea {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   box-sizing: border-box;
 }
 [data-type="control_textbox"] .form-input,
@@ -813,7 +808,7 @@ h2 ~ .form-subHeader {
 [data-type="control_passwordbox"] .form-input-wide,
 [data-type="control_autocomp"] .form-input-wide {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 [data-type="control_fullname"] .form-sub-label-container {
   box-sizing: border-box;
@@ -856,11 +851,11 @@ h2 ~ .form-subHeader {
 }
 .form-matrix-table {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 .form-address-table {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 .form-address-table td .form-dropdown {
   width: 100%;
@@ -1252,23 +1247,21 @@ label_34 = sec insurance card label FRONT
     box-shadow : none !important;
 }
 
-.form-error-message {
-    line-height : 1.5 !important;
-    margin-bottom : 2em !important;
-}
-
-.form-all, .form-dropdown, .form-label,.form-html, #label_67, #input_67, #input_45, #label_45, #label_68, #input_1, #label_1, #input_82, #label_82, #id_75, #text_85, #text_85 p, #text_60 p, #text_54 p, #input_6, #input_16, #input_1, #input_11, #label_11, #label_33, #label_34, #label_32, #label_31, #label_26, #label_27, #label_28, #input22, #label_19, #label_16, #label_17, #label_6,  ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0,  .form-submit-button, .qq-upload-button {
+.form-all, .form-dropdown, #id_75, #text_60 p, #text_54 p, #input_6, #input_16, #input_1, #input_11, #label_33, #label_34, #label_32, #label_31, #label_26, #label_27, #label_28, #input22, #label_19, #label_16, #label_17, #label_6,  ::placeholder, .form-sub-label, #input_1, #label_7, #label_input_7_0, #label_input_7_1, #label_input_5_0,  .form-submit-button, .qq-upload-button {
     font-family : kyrial-display-pro, sans-serif !important;
     color : #267A87 !important;
     font-size : 1.125rem !important;
     line-height : 1.5 !important;
-    font-weight : normal;}
+    font-weight : normal;
+    /*width : 300px !important;
+    */;
+}
 
-#text_54 p, #text_60 p, #text_85 p {
+#text_54 p, #text_60 p {
     text-align : left !important;
 }
 
-#text_60 p, #text_85 p {
+#text_60 p {
     color : red !important;
     text-align : left !important;
 }
@@ -1396,10 +1389,6 @@ select {
     display : inline-block;
     float : left;
     text-align : left;
-}
-
-#label_input_5_0 {
-    padding-top : 20px!important;
 }
 
 
