@@ -1925,7 +1925,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
 
 
   <!-- Post height to iframe via message -->
-  <!-- at the bottom of 2025-May2-contact-form-v2.html -->
+  <!-- at the bottom of 2025-May2-contact-form-v2.html 
 <script type="text/javascript">	
   (function () {
     /* Ensure the form never forces horizontal scroll */
@@ -1954,9 +1954,55 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
   })();
 </script>
 
+-->
+
+
+<script type="text/javascript">	
+(function () {
+
+  /* ------------- NEW / REVISED CSS ------------- */
+  var css = `
+    html,body{margin:0;padding:0;overflow:hidden}
+
+    /* 1 — make the whole page a flex box, so we can centre the form */
+    body{display:flex;justify-content:center}
+
+    /* 2 — let the form shrink on small screens, cap at 400 px otherwise */
+    .jotform-form,.form-all{
+      width:100%!important;     /* phone widths (<400 px) */
+      max-width:400px!important;/* tablet / desktop widths */
+      box-sizing:border-box;
+    }
+  `;
+  /* --------------------------------------------- */
+
+  var style=document.createElement('style');
+  style.appendChild(document.createTextNode(css));
+  document.head.appendChild(style);
+
+  /* height-sync code you already had – unchanged */
+  function sendHeight(){
+    var h=document.documentElement.scrollHeight||document.body.scrollHeight;
+    parent.postMessage({type:'setHeight',height:h},'*');
+  }
+  window.addEventListener('load',sendHeight);
+  window.addEventListener('resize',sendHeight);
+  new MutationObserver(sendHeight).observe(document.body,{childList:true,subtree:true});
+  setInterval(sendHeight,700);
+})();
+</script>
 
 
 
+
+
+
+
+
+
+
+
+	
 	
 </body>
 </html>
