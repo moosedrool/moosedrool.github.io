@@ -1927,26 +1927,37 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
   <!-- Post height to iframe via message -->
   <!-- at the bottom of 2025-May2-contact-form-v2.html -->
 <script type="text/javascript">	
+
+<script>
 (function () {
 
-  /* NEW: keep the form centered and responsive */
+  /* --- NEW responsive + centred form width --- */
   var css = `
     html,body{margin:0;padding:0;overflow:hidden}
-    .jotform-form,.form-all{
-      width:100%!important;      /* stretch to viewport */
-      max-width:400px!important; /* never exceed Jotform’s design width */
-      margin:0 auto!important;   /* center horizontally */
+
+    /* desktop & tablet: centre and cap at 400 px */
+    .form-all,.jotform-form{
+      width:100%!important;
+      max-width:400px!important;
+      margin:0 auto!important;
       box-sizing:border-box;
+    }
+
+    /* phones: let it shrink to fit */
+    @media (max-width:420px){
+      .form-all,.jotform-form{
+        max-width:100%!important;   /* stops the cut-off */
+      }
     }
   `;
   var style = document.createElement('style');
   style.appendChild(document.createTextNode(css));
   document.head.appendChild(style);
 
-  /* height-reporting logic (unchanged) */
-  function sendHeight () {
+  /* --- height-sync logic (unchanged) --- */
+  function sendHeight(){
     var h = document.documentElement.scrollHeight || document.body.scrollHeight;
-    parent.postMessage({ type:'setHeight', height:h }, '*');
+    parent.postMessage({type:'setHeight',height:h},'*');
   }
   window.addEventListener('load', sendHeight);
   window.addEventListener('resize', sendHeight);
