@@ -1924,6 +1924,27 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
 
 
 
+  <!-- Post height to iframe via message -->
+  <!-- at the bottom of 2025-May2-contact-form-v2.html -->
+<script type="text/javascript">
+	
+	
+	(function(){
+      function sendHeight(){
+        // get total height of content
+        var h = document.documentElement.scrollHeight;
+        // send to parent window; "*" will work if you don't have a stricter origin policy
+        parent.postMessage({ type: 'setHeight', height: h }, '*');
+      }
+      // fire on load and on window resize
+      window.addEventListener('load', sendHeight);
+      window.addEventListener('resize', sendHeight);
+
+      // if your form injects elements dynamically, observe changes:
+      new MutationObserver(sendHeight)
+        .observe(document.body, { childList: true, subtree: true });
+    })();
+  </script>
 
 	
 </body>
