@@ -2254,24 +2254,42 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
 </form></body>
 </html><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.forwardToHIPAA=true;</script><script type="text/javascript">JotForm.isNewSACL=true;</script>
 <script>
-    function testSubmitFunction() {
+        function testSubmitFunction() {
       // Gather field values from the form
-      var help = document.getElementById("input_6") ? document.getElementById("input_6").value : "";
+
+
+      // matches 👂🏻   👃🏻   🗣️   (ear+light-tone, nose+light-tone, speaking-head)
+      const emojiRE = /(👂🏻|👃🏻|🗣️)/gu;
+      var serviceLine = document.getElementById("input_6") ? document.getElementById("input_6").value : "";
+      const serviceLineCleaned  = serviceLine.replace(emojiRE, '').trim();   // text without the emojis
+      const extractedEmojis   = serviceLine.match(emojiRE) || [];          // ["👂🏻"] etc. if you need them
+
+	
+	
+      var condition = document.getElementById("input_48") ? document.getElementById("input_48").value : "";
+      var urgent = document.getElementById("input_58") ? document.getElementById("input_58").value : "";
+      var extra_services = document.getElementById("input_57") ? document.getElementById("input_57").value : "";
+
       var insurance = document.getElementById("input_16") ? document.getElementById("input_16").value : "";
       var otherInsurances = document.getElementById("input_26") ? document.getElementById("input_26").value : "";
       var email = document.getElementById("input_1") ? document.getElementById("input_1").value : "";
-      var phone = document.getElementById("input_11") 
+      var phone_number = document.getElementById("input_11") 
                   ? document.getElementById("input_11").value.replace(/\D/g, "")
                   : "";
+      var unsecure_text_ok = document.getElementById("input_84") ? document.getElementById("input_84").value : "";
       var newsletter = document.getElementById("input_5_0") ? document.getElementById("input_5_0").checked : false;
 
       // Build the data object
       var submissionData = {
-        help: help,
+        serviceLine: serviceLineCleaned,
+	condition: condition,
+	urgent: urgent,
+	extra_services: extra_services,
+	unsecure_text_ok: unsecure_text_ok,
         insurance: insurance,
         otherInsurances: otherInsurances,
         email: email,
-        phone: phone,
+        phone_number: phone_number,
         newsletter: newsletter
       };
 
