@@ -148,6 +148,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
       mixpanel.track('Contact', 
                      {"Channel": "Appointment request",
                       "Service Line": data.serviceLine, 
+		      "Condition": data.help,
                       "Urgent": data.urgent,
 		      "Extra Services": data.extra_services,
 		      "Insurance Primary": data.insurance,
