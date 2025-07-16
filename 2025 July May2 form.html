@@ -2252,7 +2252,16 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
     }
   </script>
 </form><script>
-        function testSubmitFunction() {
+      document.addEventListener('DOMContentLoaded', function () {
+      /* Grab the ONE Jotform on the page */
+      const form = document.getElementById('251305644776158');   // or document.forms[0]
+
+      /* Fires after Jotform has finished all calculations/conditions */
+      form.addEventListener('submit', function () {
+      const condition = document.getElementById('input_48').value;
+
+	  
+      function testSubmitFunction() {
       // Gather field values from the form
 
 
