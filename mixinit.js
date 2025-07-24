@@ -106,7 +106,7 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 <script type="text/javascript">
   window.addEventListener("message", function(event) {
     // Verify the message origin if desired (update the domain as needed)
-    if (event.origin.indexOf("storage.googleapis.com") === -1) {
+    if (event.origin.indexOf("md-tools-d52658.gitlab.io") === -1) {
       console.warn("Unexpected origin: " + event.origin);
       return;
     }
