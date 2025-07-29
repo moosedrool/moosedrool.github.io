@@ -106,10 +106,29 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 <script type="text/javascript">
   window.addEventListener("message", function(event) {
     // Verify the message origin if desired (update the domain as needed)
-    if (event.origin.indexOf("md-tools.vercel.app") === -1) {
-      console.warn("Unexpected origin: " + event.origin);
-      return;
+    // if (event.origin.indexOf("md-tools.vercel.app") === -1) {
+    //   console.warn("Unexpected origin: " + event.origin);
+    //   return;
+    // }
+
+
+    const validOrigins = [
+      "md-tools.vercel.app",
+      "www.chadruffinmd.com",
+      window.location.origin // Allow same-origin messages (Webflow embeds)
+    ];
+    
+    const isValidOrigin = validOrigins.some(origin => 
+      event.origin.indexOf(origin) !== -1 || 
+      event.origin === window.location.origin
+    );
+    
+    if (!isValidOrigin) {
+      console.warn("📊 Analytics: Unexpected origin: " + event.origin);
+      // Don't return here - still process the message if it has the right structure
     }
+
+	  
     // Check for the expected message type
     if (event.data && event.data.type === "jotformSubmission") {
       var data = event.data.data;
