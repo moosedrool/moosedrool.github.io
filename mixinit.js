@@ -7,6 +7,12 @@
         const parsedQs = new URLSearchParams(queryString);
         const params = Object.fromEntries(parsedQs);
         console.log("Params: ",params);
+
+		if (params.utm_campaign === "gmb_website" && params.gclid) {
+  			params.utm_campaign = params.gclid;
+			params.utm_medium = cpc;
+		}
+		
         return params;
     } 
     catch (e) {
