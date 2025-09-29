@@ -49,9 +49,14 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
         const urlParams = qsToObj(window.location.search);
 		console.log("Params before register: ", urlParams);
 
+		mixpanel.register_once({
+						"initial_utm_campaign": urlParams.utm_campaign,
+						"initial_utm_campaign_id": urlParams.utm_campaign
+		});
         mixpanel.register(urlParams, {
             persistent: false
         });
+
 
 		
 
