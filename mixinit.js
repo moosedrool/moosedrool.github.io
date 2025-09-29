@@ -12,7 +12,8 @@
   			params.utm_campaign = params.gclid;
 			params.utm_medium = cpc;
 		}
-		
+        console.log("Params after mutate: ",params);
+
         return params;
     } 
     catch (e) {
