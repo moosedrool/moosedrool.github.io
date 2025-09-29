@@ -47,10 +47,14 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
     api_host: MIXPANEL_PROXY_DOMAIN,
     loaded: function(mixpanel) {
         const urlParams = qsToObj(window.location.search);
+		console.log("urlParams: " + urlParams);
+
+		
         mixpanel.register(urlParams, {
             persistent: false
         });
 
+		
 
         var pageTitle = document.title;
 		console.log("The T I T L Z of the page is: " + pageTitle);
