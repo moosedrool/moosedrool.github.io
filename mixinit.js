@@ -47,9 +47,8 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
     api_host: MIXPANEL_PROXY_DOMAIN,
     loaded: function(mixpanel) {
         const urlParams = qsToObj(window.location.search);
-		console.log("Params after mutate: ", urlParams);
+		console.log("Params before register: ", urlParams);
 
-		
         mixpanel.register(urlParams, {
             persistent: false
         });
