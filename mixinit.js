@@ -9,7 +9,7 @@
         console.log("Params: ",params);
 
 		if (params.utm_campaign === "gmb_website" && params.gclid) {
-  			params.utm_campaign = params.gclid;
+  			params.utm_campaign = params.gad_campaignid;
 			params.utm_medium = "cpc";
 		}
         console.log("Params after mutate: ",params);
