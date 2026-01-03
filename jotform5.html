@@ -37,6 +37,60 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"email_appointment","qid":"1","subLa
 
 
 
+
+
+
+
+/* Remove all list styling from JotForm */
+.jotform-form ul,
+.jotform-form ul.form-section,
+.jotform-form ul.page-section {
+  list-style: none !important;
+  list-style-type: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.jotform-form li,
+.jotform-form li.form-line {
+  list-style: none !important;
+  list-style-type: none !important;
+  display: block !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Remove ::marker bullets (modern browsers) */
+.jotform-form ul::marker,
+.jotform-form li::marker,
+.jotform-form li.form-line::marker {
+  content: none !important;
+  font-size: 0 !important;
+  display: none !important;
+}
+
+/* Prevent Webflow rich text styles from applying */
+.jotform-form ul:not(.w-list-unstyled),
+.jotform-form li:not(.w-list-unstyled) {
+  list-style-image: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
 	
     .form-label-left{
         width:400px;
