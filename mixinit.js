@@ -166,7 +166,8 @@ mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
 	    
       mixpanel.identify(data.email);
       mixpanel.people.set(dataObject);
-
+	  var utmCampaign = mixpanel.get_property("utm_campaign");
+	  if (utmCampaign) mixpanel.people.set_once({"initial_utm_campaign": utmCampaign });
 
       var pageTitle = document.title;
       console.log("The title of the page is: " + pageTitle);
@@ -329,6 +330,8 @@ function handleApptSubmitButtonClick(event) {
       // mixpanel.ez is always available in this scope
       mixpanel.identify(emailValue);
       mixpanel.people.set(dataObject);
+	  var utmCampaign = mixpanel.get_property("utm_campaign");
+	  if (utmCampaign) mixpanel.people.set_once({"initial_utm_campaign": utmCampaign });
 
       //mixpanel.ez.people.set({$email: emailValue});
       //mixpanel.ez.people.set({newsletter: newsletterSubscription});
@@ -404,6 +407,8 @@ function handleNewsletterSubmitButtonClick(event) {
 	
     mixpanel.identify(emailValue);
     mixpanel.people.set(dataObject);
+	var utmCampaign = mixpanel.get_property("utm_campaign");
+   if (utmCampaign) mixpanel.people.set_once({"initial_utm_campaign": utmCampaign });
                       
     if (newsletterSubscription) {
     console.log("Checkbox is checked. Doing some stuff...");
@@ -453,7 +458,9 @@ function handleEventSubmitButtonClick(event) {
 	
     mixpanel.identify(emailValue);
     mixpanel.people.set(dataObject);
-                      
+    var utmCampaign = mixpanel.get_property("utm_campaign");
+    if (utmCampaign) mixpanel.people.set_once({"initial_utm_campaign": utmCampaign });
+
     mixpanel.track('Contact', {
       	"Channel": "AMA Event Sign Up",
         'Service Line': "Cochlear Implants",
