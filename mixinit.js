@@ -44,6 +44,8 @@ MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mix
 mixpanel.init(MIXPANEL_PROJECT_TOKEN, {
     debug: true,
     track_pageview: false,    //you may wish to turn this off so you don't duplicate page view events...
+	cross_subdomain_cookie: true,
+    cookie_domain: '.chadruffinmd.com',
 	stop_utm_persistence: true,
     api_host: MIXPANEL_PROXY_DOMAIN,
     loaded: function(mixpanel) {
